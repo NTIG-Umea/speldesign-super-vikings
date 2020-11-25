@@ -6,10 +6,10 @@ module.exports = {
         });
     },
 
-    create(phaser, config) {
-        phaser.anims.create({
+    create(game, config) {
+        game.anims.create({
             key: config.key,
-            frames: phaser.anims.generateFrameNumbers(
+            frames: game.anims.generateFrameNumbers(
                 config.image,
                 config.frames
             ),
