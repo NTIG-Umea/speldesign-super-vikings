@@ -22,16 +22,19 @@ module.exports = (env) => {
                     use: ['style-loader', 'css-loader', 'sass-loader'],
                 },
                 {
-                    test: /\.svg$/,
-                    use: 'file-loader',
-                },
-                {
-                    test: /\.png$/,
+                    test: /\.png|\.svg$/,
                     use: [
                         {
                             loader: 'file-loader',
                             options: {
                                 mimetype: 'image/png',
+                                name() {
+                                    if (env.production) {
+                                        return '[path][name].[ext]';
+                                    }
+
+                                    return '[contenthash].[ext]';
+                                },
                             },
                         },
                     ],
