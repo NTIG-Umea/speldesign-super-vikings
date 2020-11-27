@@ -36,5 +36,5 @@ function create() {
 }
 
 function update(time, deltaTime) {
-    player.update(this, time, deltaTime);
+    player.update(this, time, deltaTime / 1000);
 }

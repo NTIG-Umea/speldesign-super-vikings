@@ -7,6 +7,11 @@ const noise = new Noise(Math.random());
 export default {
     balls: [],
     player: null,
+    gravity: 15,
+    moveSpeed: 500,
+    time: 0,
+
+    velocity: { x: 0, y: 0 },
 
     preload(phaser) {
         phaser.load.image(sprite, sprite);
@@ -22,17 +27,49 @@ export default {
 
         this.generateGroundValues(4, 1, 5);
     },
-    update(phaser, time) {
+    update(phaser, _time, deltaTime) {
         if (this.player != null) {
-            this.player.y =
-                this.getGroundHeightPerlin((this.player.x + time) / 300) * 100 -
-                48;
+            // eslint-disable-next-line prettier/prettier
+            const ground = this.getGroundHeightPerlin( (this.player.x + this.time) / 100 ) * 100 - 48;
+            // eslint-disable-next-line prettier/prettier
+            const nextGround = this.getGroundHeightPerlin( (this.player.x + this.time + deltaTime * this.moveSpeed) / 100 ) * 100 - 48;
+
+            while (nextGround < this.player.y + this.velocity.y) {
+                this.velocity.y -= deltaTime;
+
+                if (nextGround - ground > 0) {
+                    // Fysiks her
+                }
+            }
+
+            if (this.player.y < ground) {
+                this.velocity.y += this.gravity * deltaTime;
+                // this.moveSpeed += this.gravity * deltaTime;
+            } else if (this.velocity.y > 0) {
+                console.log('test');
+                this.velocity.y = 0;
+                this.player.y = ground;
+            }
+
+            this.player.x += this.velocity.x;
+            this.player.y += this.velocity.y;
         }
 
         this.balls.forEach((ball, index) => {
             ball.x = index * 10;
-            ball.y = this.getGroundHeightPerlin((ball.x + time) / 300) * 100;
+            // eslint-disable-next-line prettier/prettier
+            ball.y = this.getGroundHeightPerlin((ball.x + this.time) / 300) * 100;
         });
+
+        if (phaser.input.activePointer.isDown) {
+            if (this.gravity != 40) {
+                this.gravity = 40;
+            }
+        } else if (this.gravity != 10) {
+            this.gravity = 10;
+        }
+
+        this.time += deltaTime * this.moveSpeed;
     },
 
     groundValues: [],
