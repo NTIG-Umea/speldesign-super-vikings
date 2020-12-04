@@ -3,6 +3,7 @@ import Phaser from 'phaser';
 import * as animations from './animations';
 import logoAnimation from '../assets/animations/logo/logo';
 import player from './player';
+import ground from './ground';
 
 config.scene = {
     preload,
@@ -23,6 +24,7 @@ function preload() {
 
     this.scene.systems.cameras.main.setBackgroundColor('#777777');
     player.preload(this);
+    ground.preload(this);
     animations.load(this, logoAnimation);
 }
 
@@ -33,8 +35,10 @@ function create() {
     sprite.setScale(0.5, 0.5);
 
     player.create(this);
+    ground.create(this);
 }
 
 function update(time, deltaTime) {
     player.update(this, time, deltaTime / 1000);
+    ground.update(this, time, deltaTime / 1000);
 }

@@ -1,32 +1,27 @@
 import sprite from '../assets/image/player.png';
-import ground from '../assets/image/ground.png';
 import { Noise } from 'noisejs';
 
 const noise = new Noise(Math.random());
+
+window.cameraX = 0;
 
 export default {
     balls: [],
     player: null,
     gravity: 15,
     moveSpeed: 500,
-    time: 0,
 
     velocity: { x: 0, y: 0 },
 
     preload(phaser) {
         phaser.load.image(sprite, sprite);
-        phaser.load.image(ground, ground);
     },
+
     create(phaser) {
         this.player = phaser.add.image(100, 100, sprite);
-        for (let i = 0; i < 800; i += 10) {
-            const ball = phaser.add.image(0, 0, ground);
-            ball.setOrigin(0, 0);
-            this.balls.push(ball);
-        }
-
         this.generateGroundValues(4, 1, 5);
     },
+
     update(phaser, _time, deltaTime) {
         if (this.player != null) {
             // eslint-disable-next-line prettier/prettier
@@ -58,7 +53,7 @@ export default {
         this.balls.forEach((ball, index) => {
             ball.x = index * 10;
             // eslint-disable-next-line prettier/prettier
-            ball.y = this.getGroundHeightPerlin((ball.x + this.time) / 300) * 100;
+            ball.y = this.getGroundHeightPerlin((ball.x + this.time) / 100) * 100;
         });
 
         if (phaser.input.activePointer.isDown) {
@@ -69,7 +64,7 @@ export default {
             this.gravity = 10;
         }
 
-        this.time += deltaTime * this.moveSpeed;
+        window.cameraX += deltaTime * this.moveSpeed;
     },
 
     groundValues: [],
