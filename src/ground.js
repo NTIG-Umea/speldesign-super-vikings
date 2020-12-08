@@ -25,11 +25,12 @@ export default {
     },
 
     update(phaser, time, deltaTime) {
-        // const t = this.shader.getUniform('time').value;
-
         this.pillars.forEach((element) => {
-            element.y =
-                (1 - noise.perlin(element.x / 400 + time / 400)) * 300 + 300;
+            element.y = this.getGroundHeight(element.x + window.cameraX);
         });
+    },
+
+    getGroundHeight(x) {
+        return noise.perlin(x / 400) * 300 + 300;
     }
 };
