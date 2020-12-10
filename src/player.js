@@ -2,13 +2,15 @@ import sprite from '../assets/image/player.png';
 import noise from './perlin';
 import ground from './ground';
 
-window.cameraX = 0;
+window.cameraX = 500;
 
 export default {
     balls: [],
     player: null,
     gravity: 15,
     moveSpeed: 1,
+    friction: 4,
+    feelGoodFormula: 50, // Magic number that defines the "feel" of te game
 
     velocity: { x: 0, y: 0 },
 
@@ -35,28 +37,42 @@ export default {
                 this.player.x + window.cameraX + 1
             );
 
-            while (nextGroundPos < this.player.y + this.velocity.y) {
-                this.velocity.y -= deltaTime;
-            }
-
-            if (Math.abs(this.player.y - nextGroundPos) <= 2) {
-                const sx = 1;
-                const sy = nextGroundPos - groundPos;
-                const vx = this.velocity.x;
-                const vy = this.velocity.y;
-                const O = Math.atan((sx * vy - sy * vx) / (vx * sx + vy * sy));
-                this.velocity.x = Math.sqrt(this.velocity.x**2 + this.velocity.y**2) * Math.PI/2 - O;
-                console.log({O});
-            }
-
             if (this.player.y < groundPos) {
                 this.velocity.y += this.gravity * deltaTime;
             } else if (this.velocity.y > 0) {
                 this.velocity.y = 0;
-                this.player.y = ground;
+                this.player.y = groundPos;
             }
 
-            this.player.y += parseInt(this.velocity.y);
+            if (nextGroundPos < this.player.y + this.velocity.y + 2) {
+                const sx = 1;
+                const sy = nextGroundPos - groundPos;
+
+                if (sy / sx >= 0) {
+                    console.log("down")
+                    this.velocity.x +=
+                        this.gravity *
+                        (sy / sx) *
+                        deltaTime *
+                        this.feelGoodFormula;
+                } else {
+                    console.log("up")
+                    this.velocity.x +=
+                        this.gravity * this.velocity.x * deltaTime * (sy / sx);
+                }
+            }
+
+            while (nextGroundPos < this.player.y + this.velocity.y) {
+                this.velocity.y -= deltaTime;
+                // this.velocity.x -= deltaTime;
+            }
+
+            this.player.y += this.velocity.y;
+            this.gravity -=
+                Math.sign(this.gravity) *
+                deltaTime *
+                this.friction *
+                Math.sqrt(this.velocity.x ** 2 + this.velocity.y ** 2);
         }
 
         if (phaser.input.activePointer.isDown) {
@@ -68,7 +84,8 @@ export default {
             this.gravity = 10;
         }
 
-        window.cameraX += deltaTime * this.velocity.x;
-        console.log({x: this.player.y, y: this.player.y});
+        window.cameraX += deltaTime * this.velocity.x * 10;
+        // console.log({ x: this.velocity.x, y: this.velocity.y });
+        // console.log({x: this.player.y, y: this.player.y});
     },
 };

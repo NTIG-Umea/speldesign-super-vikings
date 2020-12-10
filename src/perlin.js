@@ -1,6 +1,7 @@
 import Victor from 'victor';
 
 const M_PI = Math.PI;
+const seed = Date.now()
 
 function fract(x) {
     if (x >= 0) return x - Math.floor(x);
@@ -12,7 +13,7 @@ function mix(a, b, t) {
 }
 
 function rand(x) {
-    return fract(Math.sin(x) * 100000.0);
+    return fract(Math.sin(x + seed) * 100000.0);
 }
 
 export default {
