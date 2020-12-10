@@ -1,99 +1,85 @@
 import sprite from '../assets/image/player.png';
-import ground from '../assets/image/ground.png';
-import { Noise } from 'noisejs';
+import noise from './perlin';
+import ground from './ground';
 
-const noise = new Noise(Math.random());
+window.cameraX = 500;
 
 export default {
     balls: [],
     player: null,
     gravity: 15,
-    moveSpeed: 500,
-    time: 0,
+    moveSpeed: 1,
+    friction: 1.4,
+    feelGoodFormula: 50, // Magic number that defines the "feel" of te game
 
     velocity: { x: 0, y: 0 },
 
     preload(phaser) {
+        ground.preload(phaser);
         phaser.load.image(sprite, sprite);
-        phaser.load.image(ground, ground);
     },
+
     create(phaser) {
+        ground.create(phaser);
         this.player = phaser.add.image(100, 100, sprite);
-        for (let i = 0; i < 800; i += 10) {
-            const ball = phaser.add.image(0, 0, ground);
-            ball.setOrigin(0, 0);
-            this.balls.push(ball);
-        }
-
-        this.generateGroundValues(4, 1, 5);
+        this.player.setOrigin(0.5, 1);
+        this.velocity.x = this.moveSpeed;
     },
-    update(phaser, _time, deltaTime) {
+
+    update(phaser, time, deltaTime) {
+        ground.update(phaser, time, deltaTime);
+
         if (this.player != null) {
-            // eslint-disable-next-line prettier/prettier
-            const ground = this.getGroundHeightPerlin( (this.player.x + this.time) / 100 ) * 100 - 48;
-            // eslint-disable-next-line prettier/prettier
-            const nextGround = this.getGroundHeightPerlin( (this.player.x + this.time + deltaTime * this.moveSpeed) / 100 ) * 100 - 48;
+            const groundPos = ground.getGroundHeight(
+                this.player.x + window.cameraX
+            );
+            const nextGroundPos = ground.getGroundHeight(
+                this.player.x + window.cameraX + 1
+            );
 
-            while (nextGround < this.player.y + this.velocity.y) {
-                this.velocity.y -= deltaTime;
-
-                if (nextGround - ground > 0) {
-                    // Fysiks her
-                }
-            }
-
-            if (this.player.y < ground) {
+            if (this.player.y < groundPos) {
                 this.velocity.y += this.gravity * deltaTime;
-                // this.moveSpeed += this.gravity * deltaTime;
             } else if (this.velocity.y > 0) {
-                console.log('test');
                 this.velocity.y = 0;
-                this.player.y = ground;
+                this.player.y = groundPos;
             }
 
-            this.player.x += this.velocity.x;
+            if (nextGroundPos < this.player.y + this.velocity.y + 2) {
+                const sx = 1;
+                const sy = nextGroundPos - groundPos;
+
+                if (sy / sx >= 0) {
+                    this.velocity.x +=
+                        this.gravity *
+                        (sy / sx) *
+                        deltaTime *
+                        this.feelGoodFormula;
+                } else {
+                    this.velocity.x +=
+                        this.friction * this.gravity * this.velocity.x * deltaTime * -((sy / sx) ** 2);
+                }
+                console.log((sy / sx))
+            }
+
+            while (nextGroundPos < this.player.y + this.velocity.y) {
+                this.velocity.y -= deltaTime;
+                // this.velocity.x -= deltaTime;
+            }
+
             this.player.y += this.velocity.y;
         }
 
-        this.balls.forEach((ball, index) => {
-            ball.x = index * 10;
-            // eslint-disable-next-line prettier/prettier
-            ball.y = this.getGroundHeightPerlin((ball.x + this.time) / 300) * 100;
-        });
-
         if (phaser.input.activePointer.isDown) {
-            if (this.gravity != 40) {
-                this.gravity = 40;
+            if (this.gravity != 30) {
+                this.gravity = 30;
+                this.velocity.y = Math.max(this.velocity.y, 0);
             }
         } else if (this.gravity != 10) {
             this.gravity = 10;
         }
 
-        this.time += deltaTime * this.moveSpeed;
-    },
-
-    groundValues: [],
-    generateGroundValues(complexity, min, max) {
-        this.groundValues = [];
-        for (let i = 0; i < complexity; i++) {
-            this.groundValues[i] = Math.random() * (max - min) + min;
-        }
-        this.groundValues.sort((a, b) => b - a);
-    },
-
-    getGroundHeight(x) {
-        return this.groundValues.reduce(
-            (acc, val, i) => acc + Math.sin(x / parseFloat(val)) * i
-        );
-    },
-
-    getGroundHeightPerlin(x) {
-        return this.groundValues.reduce((acc, val, i) => {
-            // console.log({ acc, val, i, noise: noise.simplex2(x / val, 0) * i });
-            return (
-                acc +
-                (noise.simplex2(x / val, 0) * i) / this.groundValues.length
-            );
-        });
+        window.cameraX += deltaTime * this.velocity.x * 10;
+        // console.log({ x: this.velocity.x, y: this.velocity.y });
+        // console.log({x: this.player.y, y: this.player.y});
     },
 };
