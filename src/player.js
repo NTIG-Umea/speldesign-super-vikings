@@ -1,6 +1,7 @@
 import sprite from '../assets/image/player.png';
 import noise from './perlin';
 import ground from './ground';
+import Phaser from 'phaser';
 
 window.cameraX = 500;
 
@@ -19,11 +20,29 @@ export default {
         phaser.load.image(sprite, sprite);
     },
 
+    keyTrick: false,
+    keyBrace: false,
+    keyFlipLeft: false,
+    keyFlipRight: false,
+
     create(phaser) {
         ground.create(phaser);
         this.player = phaser.add.image(100, 100, sprite);
         this.player.setOrigin(0.5, 1);
         this.velocity.x = this.moveSpeed;
+
+        this.keyTrick = phaser.input.keyboard.addKey(
+            Phaser.Input.Keyboard.KeyCodes.UP
+        );
+        this.keyBrace = phaser.input.keyboard.addKey(
+            Phaser.Input.Keyboard.KeyCodes.DOWN
+        );
+        this.keyFlipLeft = phaser.input.keyboard.addKey(
+            Phaser.Input.Keyboard.KeyCodes.LEFT
+        );
+        this.keyFlipRight = phaser.input.keyboard.addKey(
+            Phaser.Input.Keyboard.KeyCodes.RIGHT
+        );
     },
 
     update(phaser, time, deltaTime) {
@@ -56,30 +75,40 @@ export default {
                         this.feelGoodFormula;
                 } else {
                     this.velocity.x +=
-                        this.friction * this.gravity * this.velocity.x * deltaTime * -((sy / sx) ** 2);
+                        this.friction *
+                        this.gravity *
+                        this.velocity.x *
+                        deltaTime *
+                        -((sy / sx) ** 2);
                 }
-                console.log((sy / sx))
+                this.player.angle = Math.atan2(sy, sx) * (180/Math.PI);
             }
 
             while (nextGroundPos < this.player.y + this.velocity.y) {
                 this.velocity.y -= deltaTime;
-                // this.velocity.x -= deltaTime;
             }
 
             this.player.y += this.velocity.y;
         }
 
-        if (phaser.input.activePointer.isDown) {
+        if (this.keyBrace.isDown) {
             if (this.gravity != 30) {
                 this.gravity = 30;
                 this.velocity.y = Math.max(this.velocity.y, 0);
             }
-        } else if (this.gravity != 10) {
-            this.gravity = 10;
+        } else {
+            if (this.gravity != 10) {
+                this.gravity = 10;
+            }
+
+            let flip = this.keyFlipRight.isDown - this.keyFlipLeft.isDown;
+            if (flip != 0) {
+                this.player.angle += flip;
+            }
         }
 
+        console.log(this.keyBrace.isDown, this.keyTrick.isDown, this.keyFlipLeft.isDown, this.keyFlipRight.isDown);
+
         window.cameraX += deltaTime * this.velocity.x * 10;
-        // console.log({ x: this.velocity.x, y: this.velocity.y });
-        // console.log({x: this.player.y, y: this.player.y});
     },
 };
