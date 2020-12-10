@@ -15,7 +15,7 @@ export default {
 
     create(phaser) {
         // this.shader = phaser.add.shader('Colorful Voronoi', 400, 300, 800, 600);
-        for (let i = 0; i < 800; i += 10) {
+        for (let i = 0; i < 800; i += 2) {
             const groundPillar = phaser.add.image(0, 0, ground);
             groundPillar.x = i;
             groundPillar.setOrigin(0, 0);
