@@ -9,7 +9,7 @@ export default {
     player: null,
     gravity: 15,
     moveSpeed: 1,
-    friction: 4,
+    friction: 1.4,
     feelGoodFormula: 50, // Magic number that defines the "feel" of te game
 
     velocity: { x: 0, y: 0 },
@@ -49,17 +49,16 @@ export default {
                 const sy = nextGroundPos - groundPos;
 
                 if (sy / sx >= 0) {
-                    console.log("down")
                     this.velocity.x +=
                         this.gravity *
                         (sy / sx) *
                         deltaTime *
                         this.feelGoodFormula;
                 } else {
-                    console.log("up")
                     this.velocity.x +=
-                        this.gravity * this.velocity.x * deltaTime * (sy / sx);
+                        this.friction * this.gravity * this.velocity.x * deltaTime * -((sy / sx) ** 2);
                 }
+                console.log((sy / sx))
             }
 
             while (nextGroundPos < this.player.y + this.velocity.y) {
@@ -68,16 +67,11 @@ export default {
             }
 
             this.player.y += this.velocity.y;
-            this.gravity -=
-                Math.sign(this.gravity) *
-                deltaTime *
-                this.friction *
-                Math.sqrt(this.velocity.x ** 2 + this.velocity.y ** 2);
         }
 
         if (phaser.input.activePointer.isDown) {
-            if (this.gravity != 40) {
-                this.gravity = 40;
+            if (this.gravity != 30) {
+                this.gravity = 30;
                 this.velocity.y = Math.max(this.velocity.y, 0);
             }
         } else if (this.gravity != 10) {
