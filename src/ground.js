@@ -1,7 +1,6 @@
 import ground from '../assets/image/ground.png';
 import noise from './perlin';
 import shader from '../assets/shaders/ground.fs';
-import Victor from 'victor';
 
 window.toffset = 0;
 
