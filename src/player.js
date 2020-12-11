@@ -11,7 +11,9 @@ export default {
     gravity: 15,
     moveSpeed: 1,
     friction: 1.4,
-    feelGoodFormula: 50, // Magic number that defines the "feel" of te game
+    feelGoodFormula: 50, // Magic number that defines the "feel" of the game
+    flipSpeed: 6,
+    groundOffset: -32, // The offset that the player has to the ground, to make sure the feet follows the ground, and not the body
 
     velocity: { x: 0, y: 0 },
 
@@ -28,7 +30,6 @@ export default {
     create(phaser) {
         ground.create(phaser);
         this.player = phaser.add.image(100, 100, sprite);
-        this.player.setOrigin(0.5, 1);
         this.velocity.x = this.moveSpeed;
 
         this.keyTrick = phaser.input.keyboard.addKey(
@@ -60,10 +61,13 @@ export default {
                 this.velocity.y += this.gravity * deltaTime;
             } else if (this.velocity.y > 0) {
                 this.velocity.y = 0;
-                this.player.y = groundPos;
+                this.player.y = groundPos + this.groundOffset;
             }
 
-            if (nextGroundPos < this.player.y + this.velocity.y + 2) {
+            if (
+                nextGroundPos + this.groundOffset <
+                this.player.y + this.velocity.y + 2
+            ) {
                 const sx = 1;
                 const sy = nextGroundPos - groundPos;
 
@@ -81,10 +85,14 @@ export default {
                         deltaTime *
                         -((sy / sx) ** 2);
                 }
-                this.player.angle = Math.atan2(sy, sx) * (180/Math.PI);
+
+                this.player.angle = Math.atan2(sy, sx) * (180 / Math.PI);
             }
 
-            while (nextGroundPos < this.player.y + this.velocity.y) {
+            while (
+                nextGroundPos + this.groundOffset <
+                this.player.y + this.velocity.y
+            ) {
                 this.velocity.y -= deltaTime;
             }
 
@@ -103,11 +111,9 @@ export default {
 
             let flip = this.keyFlipRight.isDown - this.keyFlipLeft.isDown;
             if (flip != 0) {
-                this.player.angle += flip;
+                this.player.angle += flip * this.flipSpeed;
             }
         }
-
-        console.log(this.keyBrace.isDown, this.keyTrick.isDown, this.keyFlipLeft.isDown, this.keyFlipRight.isDown);
 
         window.cameraX += deltaTime * this.velocity.x * 10;
     },
