@@ -9,6 +9,8 @@ config.scene = {
     preload,
     create,
     update,
+    menuPause,
+    menu,
 };
 
 const game = new Phaser.Game(config);
@@ -34,11 +36,24 @@ function create() {
     sprite.play(logoAnimation.key);
     sprite.setScale(0.5, 0.5);
 
+    const esc = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.ESC);
+    esc.on('down', () => {
+      // this.scene.pause('play');
+      // this.scene.setVisible(true, 'pause');
+      // this.scene.moveUp('pause');
+      this.scene.switch('pause');
+    });
+
     background.create(this);
     player.create(this);
 }
 
 function update(time, deltaTime) {
+
+    if (this.scene.isVisible('pause')) {
+        this.scene.setVisible(false, 'pause');
+      }
+  
     background.update(this, time / 1000, deltaTime / 1000);
     player.update(this, time / 1000, deltaTime / 1000);
 }
