@@ -1,5 +1,4 @@
 import sprite from '../assets/image/player.png';
-import noise from './perlin';
 import ground from './ground';
 import Phaser from 'phaser';
 
@@ -9,13 +8,13 @@ export default {
     balls: [],
     player: null,
     gravity: 15,
-    moveSpeed: 1,
-    friction: 1.4,
+    friction: 1,
     feelGoodFormula: 50, // Magic number that defines the "feel" of the game
     flipSpeed: 6,
+    flipAmount: 0,
     groundOffset: -32, // The offset that the player has to the ground, to make sure the feet follows the ground, and not the body
 
-    velocity: { x: 0, y: 0 },
+    velocity: { x: 100, y: -2 },
 
     preload(phaser) {
         ground.preload(phaser);
@@ -29,8 +28,7 @@ export default {
 
     create(phaser) {
         ground.create(phaser);
-        this.player = phaser.add.image(100, 100, sprite);
-        this.velocity.x = this.moveSpeed;
+        this.player = phaser.add.image(100, 200, sprite);
 
         this.keyTrick = phaser.input.keyboard.addKey(
             Phaser.Input.Keyboard.KeyCodes.UP
@@ -86,7 +84,28 @@ export default {
                         -((sy / sx) ** 2);
                 }
 
+                let deltaAngle = this.player.angle;
                 this.player.angle = Math.atan2(sy, sx) * (180 / Math.PI);
+                deltaAngle = this.player.angle - deltaAngle;
+
+                if (Math.abs(deltaAngle) > 20) {
+                    this.velocity.x =
+                        this.velocity.x / 2 +
+                        (this.velocity.x / 2) *
+                            Math.cos((deltaAngle / 180) * Math.PI);
+                }
+
+                if (
+                    Math.abs(deltaAngle) < 45 &&
+                    Math.abs(this.flipAmount) / 270 > 1
+                ) {
+                    const flips = Math.floor(
+                        (Math.abs(this.flipAmount) + 90) / 360
+                    );
+
+                    this.velocity.x += 25 * flips;
+                }
+                this.flipAmount = 0;
             }
 
             while (
@@ -112,6 +131,7 @@ export default {
             let flip = this.keyFlipRight.isDown - this.keyFlipLeft.isDown;
             if (flip != 0) {
                 this.player.angle += flip * this.flipSpeed;
+                this.flipAmount += flip * this.flipSpeed;
             }
         }
 
