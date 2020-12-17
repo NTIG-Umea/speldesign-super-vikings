@@ -4,6 +4,8 @@ import * as animations from './animations';
 import logoAnimation from '../assets/animations/logo/logo';
 import player from './player';
 import background from './background';
+import menuPause from './menuPause';
+import menu from './menu';
 
 config.scene = {
     preload,
@@ -38,10 +40,10 @@ function create() {
 
     const esc = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.ESC);
     esc.on('down', () => {
-      // this.scene.pause('play');
-      // this.scene.setVisible(true, 'pause');
-      // this.scene.moveUp('pause');
-      this.scene.switch('pause');
+        // this.scene.pause('play');
+        // this.scene.setVisible(true, 'pause');
+        // this.scene.moveUp('pause');
+        this.scene.switch('menuPause');
     });
 
     background.create(this);
@@ -49,11 +51,10 @@ function create() {
 }
 
 function update(time, deltaTime) {
+    if (this.scene.isVisible('menuPause')) {
+        this.scene.setVisible(false, 'menuPause');
+    }
 
-    if (this.scene.isVisible('pause')) {
-        this.scene.setVisible(false, 'pause');
-      }
-  
     background.update(this, time / 1000, deltaTime / 1000);
     player.update(this, time / 1000, deltaTime / 1000);
 }

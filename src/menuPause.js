@@ -1,25 +1,31 @@
 import Phaser from 'phaser';
 
 export default class menuPause extends Phaser.Scene {
-  constructor () {
-    super({ key: 'pause' });
-  }
+    constructor() {
+        super({ key: 'menuPause' });
+    }
 
-  create () {
-    this.add.image(400, 300, 'sky');
+    preload() {}
 
-    console.log(this.scene.isSleeping('play'));
+    create() {
+        this.add.image(400, 300, '../assets/image/background-1.png');
 
-    this.add.text(400, 200, 'Pause Menu Test', {
-      align: 'center',
-      fill: 'white',
-      fontFamily: 'sans-serif',
-      fontSize: 48
-    }).setOrigin(0.5, 0);
+        console.log(this.scene.isSleeping('play'));
 
-      const esc = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.ESC);
-      esc.on('down', () => {
-        this.scene.switch('play')
-      });
-  }
+        this.add
+            .text(400, 200, 'Pause Menu Test', {
+                align: 'center',
+                fill: 'white',
+                fontFamily: 'sans-serif',
+                fontSize: 48,
+            })
+            .setOrigin(0.5, 0);
+
+        const esc = this.input.keyboard.addKey(
+            Phaser.Input.Keyboard.KeyCodes.ESC
+        );
+        esc.on('down', () => {
+            this.scene.switch('play');
+        });
+    }
 }
