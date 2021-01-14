@@ -18,7 +18,7 @@ export default {
         });
     },
 
-    update(phaser, time, deltaTime) {
+    update() {
         layers.forEach((layer, i) => {
             layer.tilePositionX = window.cameraX * i / 50 + 800;
         });

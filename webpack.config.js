@@ -1,6 +1,7 @@
 /* eslint-disable no-undef */
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const WebpackFreeTexPacker = require('webpack-free-tex-packer');
 const path = require('path');
 
 module.exports = (env) => {
@@ -47,7 +48,8 @@ module.exports = (env) => {
         config.plugins.push(
             new HtmlWebpackPlugin({
                 title: 'Super-Vikings Development Endpoint',
-            })
+            }),
+            new WebpackFreeTexPacker(path.resolve(__dirname, 'assets/atlases'))
         );
     }
     return config;

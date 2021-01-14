@@ -17,7 +17,8 @@
     "phaser": "^3.24.1",
     "popper.js": "^1.16.1",
     "raw-loader": "^4.0.2",
-    "victor": "^1.1.0"
+    "victor": "^1.1.0",
+    "webpack-free-tex-packer": "^0.3.1"
   },
   "devDependencies": {
     "css-loader": "^5.0.1",
