@@ -1,20 +1,16 @@
 import ground from '../assets/image/ground.png';
 import noise from './perlin';
-import shader from '../assets/shaders/ground.fs';
 
 window.toffset = 0;
 
 export default {
     pillars: [],
-    shader: null,
 
     preload(phaser) {
         phaser.load.image(ground, ground);
-        phaser.load.glsl(shader, shader);
     },
 
     create(phaser) {
-        // this.shader = phaser.add.shader('Colorful Voronoi', 400, 300, 800, 600);
         for (let i = 0; i < 800; i += 2) {
             const groundPillar = phaser.add.image(0, 0, ground);
             groundPillar.x = i;

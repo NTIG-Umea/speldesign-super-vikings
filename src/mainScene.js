@@ -1,5 +1,4 @@
 import * as animations from './animations';
-import logoAnimation from '../assets/animations/logo/logo';
 import player from './player';
 import background from './background';
 
@@ -18,7 +17,6 @@ class MainScene extends Phaser.Scene {
          */
         
         this.load.atlas('pack-result', 'pack-result.png', 'pack-result.json');
-        animations.load(this, logoAnimation);
         this.scene.systems.cameras.main.setBackgroundColor('#777777');
 
         background.preload(this);
@@ -28,20 +26,11 @@ class MainScene extends Phaser.Scene {
     create() {
         this.scene.launch('menuPause');
 
-        animations.create(this, logoAnimation);
-        const sprite = this.add.sprite(400, 300, logoAnimation.key);
-        sprite.play(logoAnimation.key);
-        sprite.setScale(0.5, 0.5);
-
         background.create(this);
         player.create(this);
     }
 
     update(time, deltaTime) {
-        // if (this.scene.isVisible('menuPause')) {
-        //     this.scene.setVisible(false, 'menuPause');
-        // }
-
         background.update(this, time / 1000, deltaTime / 1000);
         player.update(this, time / 1000, deltaTime / 1000);
     }
