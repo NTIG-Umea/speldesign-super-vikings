@@ -16,11 +16,13 @@ class MainScene extends Phaser.Scene {
          * then add it to phaser
          * `this.load.image('my-image', myImage)`
          */
-
+        
+        this.load.atlas('pack-result', 'pack-result.png', 'pack-result.json');
+        animations.load(this, logoAnimation);
         this.scene.systems.cameras.main.setBackgroundColor('#777777');
+
         background.preload(this);
         player.preload(this);
-        animations.load(this, logoAnimation);
     }
 
     create() {
