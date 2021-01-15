@@ -8,6 +8,9 @@ export default class menuPause extends Phaser.Scene {
     preload() {}
 
     create() {
+        this.scene.moveUp();
+        this.scene.setVisible(false);
+
         this.add.image(400, 300, '../assets/image/background-1.png');
 
         console.log(this.scene.isSleeping('MainScene'));
@@ -25,7 +28,14 @@ export default class menuPause extends Phaser.Scene {
             Phaser.Input.Keyboard.KeyCodes.ESC
         );
         esc.on('down', () => {
-            this.scene.switch('MainScene');
+            if(this.scene.isVisible('menuPause')) {
+                this.scene.resume('MainScene');
+                this.scene.setVisible(false);
+            }
+            else {
+                this.scene.pause('MainScene');
+                this.scene.setVisible(true);
+            }
         });
     }
 }

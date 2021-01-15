@@ -24,15 +24,12 @@ class MainScene extends Phaser.Scene {
     }
 
     create() {
+        this.scene.launch('menuPause');
+
         animations.create(this, logoAnimation);
         const sprite = this.add.sprite(400, 300, logoAnimation.key);
         sprite.play(logoAnimation.key);
         sprite.setScale(0.5, 0.5);
-
-        const esc = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.ESC);
-        esc.on('down', () => {
-            this.scene.switch('menuPause');
-        });
 
         background.create(this);
         player.create(this);
