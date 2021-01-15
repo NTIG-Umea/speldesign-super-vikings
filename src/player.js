@@ -1,6 +1,6 @@
-import sprite from '../assets/image/player.png';
 import ground from './ground';
 import Phaser from 'phaser';
+import Animations from './animations';
 
 window.cameraX = 500;
 
@@ -8,17 +8,18 @@ export default {
     balls: [],
     player: null,
     gravity: 15,
-    friction: 1,
-    feelGoodFormula: 50, // Magic number that defines the "feel" of the game
-    flipSpeed: 6,
+    friction: 0.7,
+    feelGoodFormula: 40, // Magic number that defines the "feel" of the game
+    flipSpeed: 500,
     flipAmount: 0,
-    groundOffset: -32, // The offset that the player has to the ground, to make sure the feet follows the ground, and not the body
+    groundOffset: -45, // The offset that the player has to the ground, to make sure the feet follows the ground, and not the body
+    bracing: false,
+    flipping: false,
 
     velocity: { x: 100, y: -2 },
 
     preload(phaser) {
         ground.preload(phaser);
-        phaser.load.image(sprite, sprite);
     },
 
     keyTrick: false,
@@ -28,7 +29,12 @@ export default {
 
     create(phaser) {
         ground.create(phaser);
-        this.player = phaser.add.image(100, 200, sprite);
+
+        this.createAnimations(phaser);
+
+        this.player = phaser.add.sprite(100, 200, 'pack-result', '');
+        this.player.setScale(0.7, 0.7);
+        this.player.play('jesus_idle');
 
         this.keyTrick = phaser.input.keyboard.addKey(
             Phaser.Input.Keyboard.KeyCodes.UP
@@ -42,6 +48,87 @@ export default {
         this.keyFlipRight = phaser.input.keyboard.addKey(
             Phaser.Input.Keyboard.KeyCodes.RIGHT
         );
+    },
+
+    createAnimations(phaser) {
+        const animations = [
+            {
+                key: 'jesus_idle',
+                frames: Animations.getPackedFrames('jesus_idle', 0, 0),
+                frameRate: 120,
+                repeat: -1
+            },
+            {
+                key: 'jesus_grab_end',
+                frames: Animations.getPackedFrames('jesus_grab_end', 0, 21),
+                frameRate: 120,
+                repeat: 0
+            },
+            {
+                key: 'jesus_grab',
+                frames: Animations.getPackedFrames('jesus_grab_start', 0, 0),
+                frameRate: 120,
+                repeat: 0
+            },
+            {
+                key: 'jesus_grab_start',
+                frames: Animations.getPackedFrames('jesus_grab_start', 0, 21),
+                frameRate: 120,
+                repeat: 0
+            },
+            {
+                key: 'jesus_hopdown',
+                frames: Animations.getPackedFrames('jesus_hopdown', 0, 23),
+                frameRate: 120,
+                repeat: 0
+            },
+            {
+                key: 'jesus_hopup',
+                frames: Animations.getPackedFrames('jesus_hopup', 0, 22),
+                frameRate: 120,
+                repeat: 0
+            },
+            {
+                key: 'jesus_speedup_start',
+                frames: Animations.getPackedFrames('jesus_speedup_start', 0, 22),
+                frameRate: 120,
+                repeat: 0
+            },
+            {
+                key: 'jesus_speedup',
+                frames: Animations.getPackedFrames('jesus_speedup', 0, 0),
+                frameRate: 120,
+                repeat: -1
+            },
+            {
+                key: 'jesus_speedup_end',
+                frames: Animations.getPackedFrames('jesus_speedup_end', 0, 22),
+                frameRate: 120,
+                repeat: 0
+            }
+        ]
+
+        animations.forEach(config => phaser.anims.create(config));
+    },
+
+    lastBracing: false,
+    lastFlipping: false,
+    handleAnimationState() {
+        if(this.flipping && !this.lastFlipping) {
+            Animations.chain(this.player, 'jesus_grab_start', 'jesus_grab');
+        }
+        if(!this.flipping && this.lastFlipping) {
+            Animations.chain(this.player, 'jesus_grab_end', 'jesus_idle');
+        }
+        if(this.bracing && !this.lastBracing) {
+            Animations.chain(this.player, 'jesus_speedup_start', 'jesus_speedup');
+        }
+        if(!this.bracing && this.lastBracing) {
+            Animations.chain(this.player, 'jesus_speedup_end', 'jesus_idle');
+        }
+
+        this.lastBracing = this.bracing;
+        this.lastFlipping = this.flipping;
     },
 
     update(phaser, time, deltaTime) {
@@ -119,21 +206,32 @@ export default {
         }
 
         if (this.keyBrace.isDown) {
-            if (this.gravity != 30) {
+            if(!this.bracing) {
                 this.gravity = 30;
                 this.velocity.y = Math.max(this.velocity.y, 0);
+
+                this.bracing = true;
             }
         } else {
-            if (this.gravity != 10) {
+            if(this.bracing) {
                 this.gravity = 10;
+
+                this.bracing = false;
             }
 
             let flip = this.keyFlipRight.isDown - this.keyFlipLeft.isDown;
+            this.flipping = false;
             if (flip != 0) {
-                this.player.angle += flip * this.flipSpeed;
-                this.flipAmount += flip * this.flipSpeed;
+                this.player.angle += flip * this.flipSpeed * deltaTime;
+                this.flipAmount += flip * this.flipSpeed * deltaTime;
+
+                if(Math.abs(this.flipAmount) > 20) {
+                    this.flipping = true;
+                }
             }
         }
+
+        this.handleAnimationState();
 
         window.cameraX += deltaTime * this.velocity.x * 10;
     },
