@@ -10,7 +10,7 @@ export default class menuPause extends Phaser.Scene {
     create() {
         this.add.image(400, 300, '../assets/image/background-1.png');
 
-        console.log(this.scene.isSleeping('play'));
+        console.log(this.scene.isSleeping('MainScene'));
 
         this.add
             .text(400, 200, 'Pause Menu Test', {
@@ -25,7 +25,7 @@ export default class menuPause extends Phaser.Scene {
             Phaser.Input.Keyboard.KeyCodes.ESC
         );
         esc.on('down', () => {
-            this.scene.switch('play');
+            this.scene.switch('MainScene');
         });
     }
 }
