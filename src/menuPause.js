@@ -1,4 +1,5 @@
 import Phaser from 'phaser';
+import BlurPipeline from '../assets/shaders/pipelines/BlurPipeline';
 
 export default class menuPause extends Phaser.Scene {
     constructor() {
@@ -8,6 +9,8 @@ export default class menuPause extends Phaser.Scene {
     preload() {}
 
     create() {
+        this.pipeline = this.game.renderer.addPipeline('BlurPipeline', new BlurPipeline(this.game))
+
         this.scene.moveUp();
         this.scene.setVisible(false);
 
@@ -31,8 +34,12 @@ export default class menuPause extends Phaser.Scene {
             if(this.scene.isVisible('menuPause')) {
                 this.scene.resume('MainScene');
                 this.scene.setVisible(false);
+                
+                window.gameCamera.clearRenderToTexture();
             }
             else {
+                window.gameCamera.setRenderToTexture(this.pipeline);
+
                 this.scene.pause('MainScene');
                 this.scene.setVisible(true);
             }
