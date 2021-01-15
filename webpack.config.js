@@ -41,7 +41,12 @@ module.exports = (env) => {
                 },
             ],
         },
-        plugins: [],
+        plugins: [
+            new WebpackFreeTexPacker(path.resolve(__dirname, 'assets/atlases'), '', {
+                allowRotation: false,
+                detectIdentical: true,
+            }),
+        ],
     };
 
     if (!env.production) {
@@ -49,10 +54,6 @@ module.exports = (env) => {
             new HtmlWebpackPlugin({
                 title: 'Super-Vikings Development Endpoint',
             }),
-            new WebpackFreeTexPacker(path.resolve(__dirname, 'assets/atlases'), '', {
-                allowRotation: false,
-                detectIdentical: true,
-            })
         );
     }
     return config;
