@@ -5,6 +5,7 @@ const WebpackFreeTexPacker = require('webpack-free-tex-packer');
 const path = require('path');
 
 module.exports = (env) => {
+    console.log(env);
     if (env == undefined) env = { production: false };
 
     const config = {
@@ -42,7 +43,7 @@ module.exports = (env) => {
             ],
         },
         plugins: [
-            new WebpackFreeTexPacker(path.resolve(__dirname, 'assets/atlases'), '', {
+            new WebpackFreeTexPacker(path.resolve(__dirname, 'assets/atlases'), '../../' /* root directory */, {
                 allowRotation: false,
                 detectIdentical: true,
             }),
