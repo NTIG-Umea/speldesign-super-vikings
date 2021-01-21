@@ -3,16 +3,16 @@ import Victor from 'victor';
 const M_PI = Math.PI;
 const seed = Date.now()
 
-function fract(x) {
+export function fract(x) {
     if (x >= 0) return x - Math.floor(x);
     else return x - Math.ceil(x);
 }
 
-function mix(a, b, t) {
+export function mix(a, b, t) {
     return a + (b - a) * t;
 }
 
-function rand(x) {
+export function rand(x) {
     return fract(Math.sin(x + seed) * 100000.0);
 }
 
