@@ -1,6 +1,7 @@
 {
     "rules": {
-        "no-undef": "warn"
+        "no-undef": "warn",
+        "linebreak-style": "off"
     },
     "env": {
       "es6": true,
