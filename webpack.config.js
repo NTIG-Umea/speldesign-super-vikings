@@ -43,7 +43,7 @@ module.exports = (env) => {
             ],
         },
         plugins: [
-            new WebpackFreeTexPacker(path.resolve(__dirname, 'assets/atlases'), '../../' /* root directory */, {
+            new WebpackFreeTexPacker(path.resolve(__dirname, 'assets/atlases'), env.production ? '../../' : './' /* root directory */, {
                 allowRotation: false,
                 detectIdentical: true,
             }),
