@@ -1,6 +1,7 @@
 import ground from './ground';
 import Phaser from 'phaser';
 import Animations from './animations';
+import pointManager from './pointManager';
 import SnowParticle from '../assets/image/snow-particle.png';
 
 window.cameraX = 500;
@@ -13,7 +14,7 @@ export default {
     gravity: 15,
     friction: 0.7,
     feelGoodFormula: 40, // Magic number that defines the "feel" of the game
-    flipSpeed: 500,
+    flipSpeed: 400,
     flipAmount: 0,
     groundOffset: -45, // The offset that the player has to the ground, to make sure the feet follows the ground, and not the body
     bracing: false,
@@ -228,11 +229,13 @@ export default {
                 this.player.angle = Math.atan2(sy, sx) * (180 / Math.PI);
                 deltaAngle = this.player.angle - deltaAngle;
 
-                if (Math.abs(deltaAngle) > 20) {
+                if (Math.abs(deltaAngle) > 45) {
                     this.velocity.x =
                         this.velocity.x / 2 +
                         (this.velocity.x / 2) *
                             Math.cos((deltaAngle / 180) * Math.PI);
+
+                    pointManager.resetMultiplier();
                 }
 
                 if (
@@ -244,6 +247,8 @@ export default {
                     );
 
                     this.velocity.x += 25 * flips;
+                    pointManager.addPoints(1000 * flips, false);
+                    pointManager.increaseMultiplier(flips);
                 }
                 this.flipAmount = 0;
             }
@@ -287,5 +292,6 @@ export default {
         this.handleAnimationState();
 
         window.cameraX += deltaTime * this.velocity.x * 10;
+        pointManager.addPoints(deltaTime * this.velocity.x * 3, true);
     },
 };

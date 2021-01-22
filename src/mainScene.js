@@ -1,6 +1,7 @@
 import * as animations from './animations';
 import player from './player';
 import background from './background';
+import pointManager from './pointManager';
 
 class MainScene extends Phaser.Scene {
     constructor() {
@@ -20,6 +21,7 @@ class MainScene extends Phaser.Scene {
         this.scene.systems.cameras.main.setBackgroundColor('#777777');
 
         background.preload(this);
+        pointManager.preload(this);
         player.preload(this);
     }
 
@@ -27,11 +29,13 @@ class MainScene extends Phaser.Scene {
         this.scene.launch('menuPause');
 
         background.create(this);
+        pointManager.create(this);
         player.create(this);
     }
 
     update(time, deltaTime) {
         background.update(this, time / 1000, deltaTime / 1000);
+        pointManager.update(this, time / 1000, deltaTime / 1000);
         player.update(this, time / 1000, deltaTime / 1000);
     }
 }
