@@ -1,11 +1,14 @@
 import ground from './ground';
 import Phaser from 'phaser';
 import Animations from './animations';
+import SnowParticle from '../assets/image/snow-particle.png';
 
 window.cameraX = 500;
 
 export default {
-    balls: [],
+    particles: null,
+    snowEmitter: null,
+    doEmitSnow: false,
     player: null,
     gravity: 15,
     friction: 0.7,
@@ -20,6 +23,7 @@ export default {
 
     preload(phaser) {
         ground.preload(phaser);
+        phaser.load.image('snow-particle', SnowParticle);
     },
 
     keyTrick: false,
@@ -29,8 +33,34 @@ export default {
 
     create(phaser) {
         ground.create(phaser);
-
         this.createAnimations(phaser);
+       
+
+        this.particles = phaser.add.particles('snow-particle');
+        this.snowEmitter = this.particles.createEmitter({
+            frames: 0,
+            speedX: {
+                onEmit: (particle, key, t, value) => {
+                    return -this.velocity.x * 8 * (Math.random()/2 + 0.5);
+                }
+            },
+            speedY: {
+                onEmit: (particle, key, t, value) => {
+                    return -this.velocity.x * 6 * Math.random();
+                }
+            },
+            visible: {
+                onEmit: (particle, key, t, value) => {
+                    return this.doEmitSnow;
+                }
+            },
+            lifespan: 150,
+            rotate: { start: 0, end: 360 },
+            scale: { start: 0.1, end: 0.5 },
+            blendMode: 'NORMAL',
+            frequency: 1,
+            quantity: 3,
+        });
 
         this.player = phaser.add.sprite(100, 200, 'pack-result', '');
         this.player.setScale(0.7, 0.7);
@@ -141,6 +171,29 @@ export default {
             const nextGroundPos = ground.getGroundHeight(
                 this.player.x + window.cameraX + 1
             );
+
+            console.log(this.velocity.x);
+            if (Math.abs(this.player.y - this.groundOffset - groundPos) < 10 && this.velocity.x > 115) {
+                const snowXOffset = 30;
+                const snowYOffset = 50;
+
+                this.snowEmitter.setPosition(
+                        this.player.x + snowXOffset * Math.cos((this.player.angle + 180)/180*Math.PI) + snowYOffset * Math.cos((this.player.angle + 90)/180*Math.PI),
+                        this.player.y + snowXOffset * Math.sin((this.player.angle + 180)/180*Math.PI) + snowYOffset * Math.sin((this.player.angle + 90)/180*Math.PI)
+                    );
+                    
+                if (!this.doEmitSnow) {
+                    setTimeout(() => {
+                        this.doEmitSnow = true;
+                    }, 100)
+                }
+            }
+            else if (this.doEmitSnow) {
+                this.doEmitSnow = false; 
+                
+                this.snowEmitter.setPosition( -100, -100 );
+            }
+
 
             if (this.player.y < groundPos) {
                 this.velocity.y += this.gravity * deltaTime;
