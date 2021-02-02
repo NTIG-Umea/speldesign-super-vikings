@@ -24,7 +24,7 @@ module.exports = (env) => {
                     use: ['style-loader', 'css-loader', 'sass-loader'],
                 },
                 {
-                    test: /\.png|\.svg|\.fs(h)?$/,
+                    test: /\.png|\.svg?$/,
                     use: [
                         {
                             loader: 'file-loader',
@@ -37,6 +37,14 @@ module.exports = (env) => {
                                     return '[contenthash].[ext]';
                                 },
                             },
+                        },
+                    ],
+                },
+                {
+                    test: /\.fs(h)?$/,
+                    use: [
+                        {
+                            loader: 'raw-loader',
                         },
                     ],
                 },
@@ -58,7 +66,8 @@ module.exports = (env) => {
         config.plugins.push(
             new HtmlWebpackPlugin({
                 title: 'Super-Vikings Development Endpoint',
-            })
+            }),
+            // new WebpackFreeTexPacker(path.resolve(__dirname, 'assets/atlases'))
         );
     }
     return config;

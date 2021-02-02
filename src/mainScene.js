@@ -26,6 +26,9 @@ class MainScene extends Phaser.Scene {
     }
 
     create() {
+        window.gameCamera = this.cameras.add();
+        window.gameCamera.setName('GameCamera');
+
         this.scene.launch('menuPause');
 
         background.create(this);
