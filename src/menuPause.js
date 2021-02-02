@@ -23,7 +23,7 @@ export default class menuPause extends Phaser.Scene {
         console.log(this.scene.isSleeping('MainScene'));
 
         this.add
-            .text(400, 200, 'Pausat', {
+            .text(400, 200, '🎄 Pausat', {
                 align: 'center',
                 fill: 'white',
                 fontFamily: 'Balsamiq Sans, sans-serif',

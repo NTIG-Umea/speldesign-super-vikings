@@ -42,5 +42,5 @@ void main( void )
 		}
 	}
 	
-	gl_FragColor = vec4(final_colour/(Z*Z), 1.0);
+	gl_FragColor = vec4(max(final_colour/(Z*Z)-0.2, 0.0), 1.0);
 }
