@@ -18,8 +18,6 @@ export default class menuPause extends Phaser.Scene {
         this.scene.moveUp();
         this.scene.setVisible(false);
 
-        this.add.image(400, 300, '../assets/image/background-1.png');
-
         console.log(this.scene.isSleeping('MainScene'));
 
         this.add

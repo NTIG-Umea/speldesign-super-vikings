@@ -1,9 +1,10 @@
+import Phaser from 'phaser';
 import * as animations from './animations';
 import logoAnimation from '../assets/animations/logo/logo';
 import player from './player';
 import background from './background';
 
-class MainScene extends Phaser.Scene {
+export default class MainScene extends Phaser.Scene {
     constructor() {
         super('MainScene');
     }
@@ -18,7 +19,6 @@ class MainScene extends Phaser.Scene {
          */
 
         this.scene.systems.cameras.main.setBackgroundColor('#777777');
-        background.preload(this);
         player.preload(this);
         animations.load(this, logoAnimation);
     }
@@ -47,5 +47,3 @@ class MainScene extends Phaser.Scene {
         player.update(this, time / 1000, deltaTime / 1000);
     }
 }
-
-export default MainScene
