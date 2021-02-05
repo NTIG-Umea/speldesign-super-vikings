@@ -1,0 +1,4479 @@
+{
+  "frames": {
+    "atlases/nisse_idle/0.png": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 146,
+        "h": 364
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 3,
+        "y": 61,
+        "w": 146,
+        "h": 364
+      },
+      "sourceSize": {
+        "w": 180,
+        "h": 430
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/nisse_idle/1.png": {
+      "frame": {
+        "x": 0,
+        "y": 364,
+        "w": 146,
+        "h": 363
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 3,
+        "y": 62,
+        "w": 146,
+        "h": 363
+      },
+      "sourceSize": {
+        "w": 180,
+        "h": 430
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/nisse_idle/2.png": {
+      "frame": {
+        "x": 0,
+        "y": 727,
+        "w": 146,
+        "h": 363
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 3,
+        "y": 62,
+        "w": 146,
+        "h": 363
+      },
+      "sourceSize": {
+        "w": 180,
+        "h": 430
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/nisse_idle/26.png": {
+      "frame": {
+        "x": 0,
+        "y": 1090,
+        "w": 146,
+        "h": 363
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 3,
+        "y": 62,
+        "w": 146,
+        "h": 363
+      },
+      "sourceSize": {
+        "w": 180,
+        "h": 430
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/nisse_idle/27.png": {
+      "frame": {
+        "x": 0,
+        "y": 1453,
+        "w": 146,
+        "h": 363
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 3,
+        "y": 62,
+        "w": 146,
+        "h": 363
+      },
+      "sourceSize": {
+        "w": 180,
+        "h": 430
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_grab_end/17.png": {
+      "frame": {
+        "x": 0,
+        "y": 1816,
+        "w": 94,
+        "h": 164
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 4,
+        "w": 94,
+        "h": 164
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_grab_end/18.png": {
+      "frame": {
+        "x": 94,
+        "y": 1816,
+        "w": 94,
+        "h": 164
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 4,
+        "w": 94,
+        "h": 164
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/nisse_idle/25.png": {
+      "frame": {
+        "x": 146,
+        "y": 0,
+        "w": 146,
+        "h": 362
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 3,
+        "y": 63,
+        "w": 146,
+        "h": 362
+      },
+      "sourceSize": {
+        "w": 180,
+        "h": 430
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/nisse_idle/24.png": {
+      "frame": {
+        "x": 146,
+        "y": 362,
+        "w": 147,
+        "h": 361
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 3,
+        "y": 64,
+        "w": 147,
+        "h": 361
+      },
+      "sourceSize": {
+        "w": 180,
+        "h": 430
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/nisse_idle/23.png": {
+      "frame": {
+        "x": 292,
+        "y": 0,
+        "w": 147,
+        "h": 360
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 3,
+        "y": 65,
+        "w": 147,
+        "h": 360
+      },
+      "sourceSize": {
+        "w": 180,
+        "h": 430
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/nisse_idle/22.png": {
+      "frame": {
+        "x": 146,
+        "y": 723,
+        "w": 148,
+        "h": 358
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 3,
+        "y": 67,
+        "w": 148,
+        "h": 358
+      },
+      "sourceSize": {
+        "w": 180,
+        "h": 430
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/nisse_idle/21.png": {
+      "frame": {
+        "x": 293,
+        "y": 360,
+        "w": 149,
+        "h": 357
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 3,
+        "y": 68,
+        "w": 149,
+        "h": 357
+      },
+      "sourceSize": {
+        "w": 180,
+        "h": 430
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/nisse_idle/10.png": {
+      "frame": {
+        "x": 439,
+        "y": 0,
+        "w": 149,
+        "h": 356
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 3,
+        "y": 69,
+        "w": 149,
+        "h": 356
+      },
+      "sourceSize": {
+        "w": 180,
+        "h": 430
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/nisse_idle/14.png": {
+      "frame": {
+        "x": 146,
+        "y": 1081,
+        "w": 150,
+        "h": 355
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 3,
+        "y": 70,
+        "w": 150,
+        "h": 355
+      },
+      "sourceSize": {
+        "w": 180,
+        "h": 430
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/nisse_idle/15.png": {
+      "frame": {
+        "x": 294,
+        "y": 717,
+        "w": 150,
+        "h": 355
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 3,
+        "y": 70,
+        "w": 150,
+        "h": 355
+      },
+      "sourceSize": {
+        "w": 180,
+        "h": 430
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/nisse_idle/11.png": {
+      "frame": {
+        "x": 442,
+        "y": 356,
+        "w": 149,
+        "h": 355
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 3,
+        "y": 70,
+        "w": 149,
+        "h": 355
+      },
+      "sourceSize": {
+        "w": 180,
+        "h": 430
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/nisse_idle/12.png": {
+      "frame": {
+        "x": 588,
+        "y": 0,
+        "w": 149,
+        "h": 355
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 3,
+        "y": 70,
+        "w": 149,
+        "h": 355
+      },
+      "sourceSize": {
+        "w": 180,
+        "h": 430
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/nisse_idle/13.png": {
+      "frame": {
+        "x": 146,
+        "y": 1436,
+        "w": 149,
+        "h": 355
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 3,
+        "y": 70,
+        "w": 149,
+        "h": 355
+      },
+      "sourceSize": {
+        "w": 180,
+        "h": 430
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_grab_end/19.png": {
+      "frame": {
+        "x": 188,
+        "y": 1791,
+        "w": 94,
+        "h": 164
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 4,
+        "w": 94,
+        "h": 164
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_grab_end/20.png": {
+      "frame": {
+        "x": 282,
+        "y": 1791,
+        "w": 94,
+        "h": 164
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 4,
+        "w": 94,
+        "h": 164
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_grab_end/21.png": {
+      "frame": {
+        "x": 376,
+        "y": 1791,
+        "w": 94,
+        "h": 164
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 4,
+        "w": 94,
+        "h": 164
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_grab_start/0.png": {
+      "frame": {
+        "x": 470,
+        "y": 1791,
+        "w": 94,
+        "h": 164
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 4,
+        "w": 94,
+        "h": 164
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_grab_start/1.png": {
+      "frame": {
+        "x": 295,
+        "y": 1436,
+        "w": 94,
+        "h": 164
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 4,
+        "w": 94,
+        "h": 164
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_grab_start/2.png": {
+      "frame": {
+        "x": 295,
+        "y": 1600,
+        "w": 94,
+        "h": 164
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 4,
+        "w": 94,
+        "h": 164
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_grab_start/3.png": {
+      "frame": {
+        "x": 296,
+        "y": 1072,
+        "w": 94,
+        "h": 164
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 4,
+        "w": 94,
+        "h": 164
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_grab_start/4.png": {
+      "frame": {
+        "x": 296,
+        "y": 1236,
+        "w": 94,
+        "h": 164
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 4,
+        "w": 94,
+        "h": 164
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_grab_start/5.png": {
+      "frame": {
+        "x": 389,
+        "y": 1400,
+        "w": 94,
+        "h": 164
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 4,
+        "w": 94,
+        "h": 164
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_hopdown/23.png": {
+      "frame": {
+        "x": 389,
+        "y": 1564,
+        "w": 94,
+        "h": 164
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 4,
+        "w": 94,
+        "h": 164
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_hopup/1.png": {
+      "frame": {
+        "x": 390,
+        "y": 1072,
+        "w": 94,
+        "h": 164
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 4,
+        "w": 94,
+        "h": 164
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_speedup_end/19.png": {
+      "frame": {
+        "x": 390,
+        "y": 1236,
+        "w": 94,
+        "h": 164
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 4,
+        "w": 94,
+        "h": 164
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_speedup_end/20.png": {
+      "frame": {
+        "x": 444,
+        "y": 711,
+        "w": 94,
+        "h": 164
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 4,
+        "w": 94,
+        "h": 164
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_speedup_end/21.png": {
+      "frame": {
+        "x": 444,
+        "y": 875,
+        "w": 94,
+        "h": 164
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 4,
+        "w": 94,
+        "h": 164
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_grab_end/14.png": {
+      "frame": {
+        "x": 483,
+        "y": 1400,
+        "w": 94,
+        "h": 163
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 4,
+        "w": 94,
+        "h": 163
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_grab_end/15.png": {
+      "frame": {
+        "x": 483,
+        "y": 1563,
+        "w": 94,
+        "h": 163
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 4,
+        "w": 94,
+        "h": 163
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_grab_end/16.png": {
+      "frame": {
+        "x": 564,
+        "y": 1726,
+        "w": 94,
+        "h": 163
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 4,
+        "w": 94,
+        "h": 163
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_hopdown/17.png": {
+      "frame": {
+        "x": 564,
+        "y": 1889,
+        "w": 94,
+        "h": 159
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 6,
+        "w": 94,
+        "h": 159
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_grab_start/6.png": {
+      "frame": {
+        "x": 658,
+        "y": 1726,
+        "w": 94,
+        "h": 163
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 4,
+        "w": 94,
+        "h": 163
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_hopup/7.png": {
+      "frame": {
+        "x": 658,
+        "y": 1889,
+        "w": 94,
+        "h": 159
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 6,
+        "w": 94,
+        "h": 159
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_grab_start/7.png": {
+      "frame": {
+        "x": 752,
+        "y": 1726,
+        "w": 94,
+        "h": 163
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 4,
+        "w": 94,
+        "h": 163
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_speedup_end/13.png": {
+      "frame": {
+        "x": 752,
+        "y": 1889,
+        "w": 94,
+        "h": 159
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 9,
+        "w": 94,
+        "h": 159
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_grab_end/5.png": {
+      "frame": {
+        "x": 846,
+        "y": 1889,
+        "w": 85,
+        "h": 159
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 57,
+        "y": 7,
+        "w": 85,
+        "h": 159
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_grab_start/8.png": {
+      "frame": {
+        "x": 484,
+        "y": 1039,
+        "w": 94,
+        "h": 163
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 4,
+        "w": 94,
+        "h": 163
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_hopdown/20.png": {
+      "frame": {
+        "x": 484,
+        "y": 1202,
+        "w": 94,
+        "h": 163
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 4,
+        "w": 94,
+        "h": 163
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_hopdown/21.png": {
+      "frame": {
+        "x": 538,
+        "y": 711,
+        "w": 94,
+        "h": 163
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 4,
+        "w": 94,
+        "h": 163
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_hopdown/22.png": {
+      "frame": {
+        "x": 538,
+        "y": 874,
+        "w": 94,
+        "h": 163
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 4,
+        "w": 94,
+        "h": 163
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_hopup/2.png": {
+      "frame": {
+        "x": 591,
+        "y": 355,
+        "w": 94,
+        "h": 163
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 4,
+        "w": 94,
+        "h": 163
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_hopup/3.png": {
+      "frame": {
+        "x": 591,
+        "y": 518,
+        "w": 94,
+        "h": 163
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 4,
+        "w": 94,
+        "h": 163
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_speedup_end/17.png": {
+      "frame": {
+        "x": 577,
+        "y": 1365,
+        "w": 94,
+        "h": 163
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 5,
+        "w": 94,
+        "h": 163
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_speedup_end/18.png": {
+      "frame": {
+        "x": 578,
+        "y": 1528,
+        "w": 94,
+        "h": 163
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 5,
+        "w": 94,
+        "h": 163
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_grab_end/13.png": {
+      "frame": {
+        "x": 672,
+        "y": 1528,
+        "w": 93,
+        "h": 163
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 53,
+        "y": 4,
+        "w": 93,
+        "h": 163
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_hopup/4.png": {
+      "frame": {
+        "x": 765,
+        "y": 1528,
+        "w": 94,
+        "h": 162
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 5,
+        "w": 94,
+        "h": 162
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_speedup_end/15.png": {
+      "frame": {
+        "x": 846,
+        "y": 1690,
+        "w": 94,
+        "h": 162
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 6,
+        "w": 94,
+        "h": 162
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_speedup_end/16.png": {
+      "frame": {
+        "x": 931,
+        "y": 1852,
+        "w": 94,
+        "h": 162
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 6,
+        "w": 94,
+        "h": 162
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_grab_end/12.png": {
+      "frame": {
+        "x": 578,
+        "y": 1037,
+        "w": 92,
+        "h": 162
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 53,
+        "y": 5,
+        "w": 92,
+        "h": 162
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_grab_start/10.png": {
+      "frame": {
+        "x": 632,
+        "y": 1199,
+        "w": 92,
+        "h": 162
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 53,
+        "y": 5,
+        "w": 92,
+        "h": 162
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_grab_start/9.png": {
+      "frame": {
+        "x": 685,
+        "y": 1361,
+        "w": 92,
+        "h": 162
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 53,
+        "y": 5,
+        "w": 92,
+        "h": 162
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_grab_end/11.png": {
+      "frame": {
+        "x": 777,
+        "y": 1361,
+        "w": 91,
+        "h": 162
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 54,
+        "y": 5,
+        "w": 91,
+        "h": 162
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_grab_end/10.png": {
+      "frame": {
+        "x": 868,
+        "y": 1361,
+        "w": 90,
+        "h": 162
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 54,
+        "y": 5,
+        "w": 90,
+        "h": 162
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_grab_start/11.png": {
+      "frame": {
+        "x": 958,
+        "y": 1361,
+        "w": 90,
+        "h": 162
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 54,
+        "y": 5,
+        "w": 90,
+        "h": 162
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_hopdown/18.png": {
+      "frame": {
+        "x": 1048,
+        "y": 1361,
+        "w": 94,
+        "h": 161
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 5,
+        "w": 94,
+        "h": 161
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_hopdown/19.png": {
+      "frame": {
+        "x": 859,
+        "y": 1523,
+        "w": 94,
+        "h": 161
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 5,
+        "w": 94,
+        "h": 161
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_hopup/5.png": {
+      "frame": {
+        "x": 940,
+        "y": 1684,
+        "w": 94,
+        "h": 161
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 5,
+        "w": 94,
+        "h": 161
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_hopup/6.png": {
+      "frame": {
+        "x": 953,
+        "y": 1523,
+        "w": 94,
+        "h": 161
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 5,
+        "w": 94,
+        "h": 161
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_speedup_end/14.png": {
+      "frame": {
+        "x": 1025,
+        "y": 1845,
+        "w": 94,
+        "h": 161
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 7,
+        "w": 94,
+        "h": 161
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_grab_end/9.png": {
+      "frame": {
+        "x": 1034,
+        "y": 1684,
+        "w": 89,
+        "h": 161
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 55,
+        "y": 6,
+        "w": 89,
+        "h": 161
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_grab_start/12.png": {
+      "frame": {
+        "x": 1047,
+        "y": 1523,
+        "w": 89,
+        "h": 161
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 55,
+        "y": 6,
+        "w": 89,
+        "h": 161
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_grab_start/13.png": {
+      "frame": {
+        "x": 1119,
+        "y": 1845,
+        "w": 88,
+        "h": 161
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 55,
+        "y": 6,
+        "w": 88,
+        "h": 161
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_grab_end/8.png": {
+      "frame": {
+        "x": 1123,
+        "y": 1684,
+        "w": 87,
+        "h": 161
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 56,
+        "y": 6,
+        "w": 87,
+        "h": 161
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_grab_start/14.png": {
+      "frame": {
+        "x": 1136,
+        "y": 1522,
+        "w": 87,
+        "h": 161
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 56,
+        "y": 6,
+        "w": 87,
+        "h": 161
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_grab_end/7.png": {
+      "frame": {
+        "x": 1207,
+        "y": 1845,
+        "w": 87,
+        "h": 160
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 56,
+        "y": 6,
+        "w": 87,
+        "h": 160
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_grab_end/6.png": {
+      "frame": {
+        "x": 1210,
+        "y": 1683,
+        "w": 85,
+        "h": 159
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 57,
+        "y": 7,
+        "w": 85,
+        "h": 159
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_grab_start/15.png": {
+      "frame": {
+        "x": 1294,
+        "y": 1842,
+        "w": 85,
+        "h": 159
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 57,
+        "y": 7,
+        "w": 85,
+        "h": 159
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_grab_start/16.png": {
+      "frame": {
+        "x": 632,
+        "y": 681,
+        "w": 85,
+        "h": 159
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 57,
+        "y": 7,
+        "w": 85,
+        "h": 159
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_grab_end/4.png": {
+      "frame": {
+        "x": 632,
+        "y": 840,
+        "w": 83,
+        "h": 159
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 58,
+        "y": 7,
+        "w": 83,
+        "h": 159
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_grab_start/17.png": {
+      "frame": {
+        "x": 670,
+        "y": 999,
+        "w": 83,
+        "h": 159
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 58,
+        "y": 7,
+        "w": 83,
+        "h": 159
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_hopdown/16.png": {
+      "frame": {
+        "x": 715,
+        "y": 840,
+        "w": 94,
+        "h": 158
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 6,
+        "w": 94,
+        "h": 158
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_hopup/8.png": {
+      "frame": {
+        "x": 724,
+        "y": 1158,
+        "w": 94,
+        "h": 158
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 6,
+        "w": 94,
+        "h": 158
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_speedup_end/12.png": {
+      "frame": {
+        "x": 753,
+        "y": 998,
+        "w": 94,
+        "h": 158
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 10,
+        "w": 94,
+        "h": 158
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_grab_end/1.png": {
+      "frame": {
+        "x": 818,
+        "y": 1156,
+        "w": 83,
+        "h": 158
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 58,
+        "y": 8,
+        "w": 83,
+        "h": 158
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_grab_end/2.png": {
+      "frame": {
+        "x": 685,
+        "y": 355,
+        "w": 83,
+        "h": 158
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 58,
+        "y": 8,
+        "w": 83,
+        "h": 158
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_grab_end/3.png": {
+      "frame": {
+        "x": 685,
+        "y": 513,
+        "w": 83,
+        "h": 158
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 58,
+        "y": 8,
+        "w": 83,
+        "h": 158
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_grab_start/18.png": {
+      "frame": {
+        "x": 717,
+        "y": 671,
+        "w": 83,
+        "h": 158
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 58,
+        "y": 8,
+        "w": 83,
+        "h": 158
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_grab_start/19.png": {
+      "frame": {
+        "x": 800,
+        "y": 671,
+        "w": 83,
+        "h": 158
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 58,
+        "y": 8,
+        "w": 83,
+        "h": 158
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_grab_start/20.png": {
+      "frame": {
+        "x": 883,
+        "y": 671,
+        "w": 83,
+        "h": 158
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 58,
+        "y": 8,
+        "w": 83,
+        "h": 158
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_grab/0.png": {
+      "frame": {
+        "x": 966,
+        "y": 671,
+        "w": 82,
+        "h": 158
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 59,
+        "y": 8,
+        "w": 82,
+        "h": 158
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_speedup_end/11.png": {
+      "frame": {
+        "x": 809,
+        "y": 829,
+        "w": 99,
+        "h": 156
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 12,
+        "w": 99,
+        "h": 156
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_hopdown/15.png": {
+      "frame": {
+        "x": 847,
+        "y": 985,
+        "w": 94,
+        "h": 156
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 7,
+        "w": 94,
+        "h": 156
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_hopup/9.png": {
+      "frame": {
+        "x": 908,
+        "y": 829,
+        "w": 94,
+        "h": 156
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 7,
+        "w": 94,
+        "h": 156
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_hopdown/14.png": {
+      "frame": {
+        "x": 901,
+        "y": 1141,
+        "w": 94,
+        "h": 155
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 7,
+        "w": 94,
+        "h": 155
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_hopup/10.png": {
+      "frame": {
+        "x": 941,
+        "y": 985,
+        "w": 94,
+        "h": 155
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 7,
+        "w": 94,
+        "h": 155
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_speedup_end/10.png": {
+      "frame": {
+        "x": 1002,
+        "y": 829,
+        "w": 104,
+        "h": 154
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 14,
+        "w": 104,
+        "h": 154
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_hopdown/13.png": {
+      "frame": {
+        "x": 995,
+        "y": 1140,
+        "w": 94,
+        "h": 153
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 8,
+        "w": 94,
+        "h": 153
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_speedup_end/9.png": {
+      "frame": {
+        "x": 1035,
+        "y": 983,
+        "w": 109,
+        "h": 152
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 16,
+        "w": 109,
+        "h": 152
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_hopup/11.png": {
+      "frame": {
+        "x": 1089,
+        "y": 1135,
+        "w": 94,
+        "h": 152
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 8,
+        "w": 94,
+        "h": 152
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_hopdown/12.png": {
+      "frame": {
+        "x": 1142,
+        "y": 1287,
+        "w": 94,
+        "h": 151
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 9,
+        "w": 94,
+        "h": 151
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_speedup_end/8.png": {
+      "frame": {
+        "x": 1223,
+        "y": 1438,
+        "w": 114,
+        "h": 150
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 18,
+        "w": 114,
+        "h": 150
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_hopdown/11.png": {
+      "frame": {
+        "x": 1295,
+        "y": 1588,
+        "w": 94,
+        "h": 150
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 9,
+        "w": 94,
+        "h": 150
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_hopup/12.png": {
+      "frame": {
+        "x": 1379,
+        "y": 1738,
+        "w": 94,
+        "h": 150
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 9,
+        "w": 94,
+        "h": 150
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_speedup_end/7.png": {
+      "frame": {
+        "x": 1379,
+        "y": 1888,
+        "w": 118,
+        "h": 149
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 19,
+        "w": 118,
+        "h": 149
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_speedup_end/6.png": {
+      "frame": {
+        "x": 1497,
+        "y": 1888,
+        "w": 122,
+        "h": 148
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 51,
+        "y": 20,
+        "w": 122,
+        "h": 148
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_hopup/13.png": {
+      "frame": {
+        "x": 1619,
+        "y": 1888,
+        "w": 94,
+        "h": 148
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 10,
+        "w": 94,
+        "h": 148
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_speedup/0.png": {
+      "frame": {
+        "x": 1713,
+        "y": 0,
+        "w": 132,
+        "h": 144
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 49,
+        "y": 24,
+        "w": 132,
+        "h": 144
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_hopdown/10.png": {
+      "frame": {
+        "x": 737,
+        "y": 144,
+        "w": 94,
+        "h": 147
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 10,
+        "w": 94,
+        "h": 147
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_speedup_end/1.png": {
+      "frame": {
+        "x": 768,
+        "y": 0,
+        "w": 131,
+        "h": 144
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 49,
+        "y": 24,
+        "w": 131,
+        "h": 144
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_hopdown/8.png": {
+      "frame": {
+        "x": 899,
+        "y": 0,
+        "w": 94,
+        "h": 144
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 11,
+        "w": 94,
+        "h": 144
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_speedup_end/2.png": {
+      "frame": {
+        "x": 1845,
+        "y": 0,
+        "w": 131,
+        "h": 145
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 49,
+        "y": 23,
+        "w": 131,
+        "h": 145
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_speedup_end/3.png": {
+      "frame": {
+        "x": 1713,
+        "y": 144,
+        "w": 130,
+        "h": 145
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 49,
+        "y": 23,
+        "w": 130,
+        "h": 145
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_speedup_end/4.png": {
+      "frame": {
+        "x": 1843,
+        "y": 145,
+        "w": 127,
+        "h": 146
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 50,
+        "y": 22,
+        "w": 127,
+        "h": 146
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_speedup_end/5.png": {
+      "frame": {
+        "x": 1713,
+        "y": 289,
+        "w": 124,
+        "h": 146
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 51,
+        "y": 22,
+        "w": 124,
+        "h": 146
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_hopup/14.png": {
+      "frame": {
+        "x": 1713,
+        "y": 435,
+        "w": 94,
+        "h": 147
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 10,
+        "w": 94,
+        "h": 147
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_hopdown/9.png": {
+      "frame": {
+        "x": 1713,
+        "y": 582,
+        "w": 94,
+        "h": 145
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 11,
+        "w": 94,
+        "h": 145
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_hopup/15.png": {
+      "frame": {
+        "x": 1106,
+        "y": 727,
+        "w": 94,
+        "h": 145
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 11,
+        "w": 94,
+        "h": 145
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_hopup/16.png": {
+      "frame": {
+        "x": 1837,
+        "y": 291,
+        "w": 94,
+        "h": 144
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 11,
+        "w": 94,
+        "h": 144
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_hopdown/7.png": {
+      "frame": {
+        "x": 1931,
+        "y": 291,
+        "w": 94,
+        "h": 143
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 12,
+        "w": 94,
+        "h": 143
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_hopdown/6.png": {
+      "frame": {
+        "x": 1931,
+        "y": 434,
+        "w": 94,
+        "h": 142
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 12,
+        "w": 94,
+        "h": 142
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_hopup/17.png": {
+      "frame": {
+        "x": 1807,
+        "y": 435,
+        "w": 94,
+        "h": 142
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 12,
+        "w": 94,
+        "h": 142
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_hopdown/5.png": {
+      "frame": {
+        "x": 1901,
+        "y": 576,
+        "w": 94,
+        "h": 141
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 12,
+        "w": 94,
+        "h": 141
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_hopup/18.png": {
+      "frame": {
+        "x": 1807,
+        "y": 577,
+        "w": 94,
+        "h": 141
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 12,
+        "w": 94,
+        "h": 141
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_hopdown/4.png": {
+      "frame": {
+        "x": 1901,
+        "y": 717,
+        "w": 94,
+        "h": 140
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 13,
+        "w": 94,
+        "h": 140
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_hopup/19.png": {
+      "frame": {
+        "x": 1807,
+        "y": 718,
+        "w": 94,
+        "h": 140
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 13,
+        "w": 94,
+        "h": 140
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_hopdown/0.png": {
+      "frame": {
+        "x": 1713,
+        "y": 727,
+        "w": 94,
+        "h": 139
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 13,
+        "w": 94,
+        "h": 139
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_hopdown/1.png": {
+      "frame": {
+        "x": 1901,
+        "y": 857,
+        "w": 94,
+        "h": 139
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 13,
+        "w": 94,
+        "h": 139
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_hopdown/2.png": {
+      "frame": {
+        "x": 1144,
+        "y": 996,
+        "w": 94,
+        "h": 139
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 13,
+        "w": 94,
+        "h": 139
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_hopdown/3.png": {
+      "frame": {
+        "x": 1238,
+        "y": 996,
+        "w": 94,
+        "h": 139
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 13,
+        "w": 94,
+        "h": 139
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_hopup/20.png": {
+      "frame": {
+        "x": 1807,
+        "y": 858,
+        "w": 94,
+        "h": 139
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 13,
+        "w": 94,
+        "h": 139
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_hopup/21.png": {
+      "frame": {
+        "x": 1713,
+        "y": 866,
+        "w": 94,
+        "h": 139
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 13,
+        "w": 94,
+        "h": 139
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_hopup/22.png": {
+      "frame": {
+        "x": 1713,
+        "y": 1005,
+        "w": 94,
+        "h": 139
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 13,
+        "w": 94,
+        "h": 139
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_grab_end/0.png": {
+      "frame": {
+        "x": 966,
+        "y": 671,
+        "w": 82,
+        "h": 158
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 59,
+        "y": 8,
+        "w": 82,
+        "h": 158
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_grab_start/21.png": {
+      "frame": {
+        "x": 966,
+        "y": 671,
+        "w": 82,
+        "h": 158
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 59,
+        "y": 8,
+        "w": 82,
+        "h": 158
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_hopup/0.png": {
+      "frame": {
+        "x": 470,
+        "y": 1791,
+        "w": 94,
+        "h": 164
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 4,
+        "w": 94,
+        "h": 164
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_idle/0.png": {
+      "frame": {
+        "x": 470,
+        "y": 1791,
+        "w": 94,
+        "h": 164
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 4,
+        "w": 94,
+        "h": 164
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_speedup_end/22.png": {
+      "frame": {
+        "x": 470,
+        "y": 1791,
+        "w": 94,
+        "h": 164
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 4,
+        "w": 94,
+        "h": 164
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_speedup_start/0.png": {
+      "frame": {
+        "x": 470,
+        "y": 1791,
+        "w": 94,
+        "h": 164
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 4,
+        "w": 94,
+        "h": 164
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_speedup_end/0.png": {
+      "frame": {
+        "x": 1713,
+        "y": 0,
+        "w": 132,
+        "h": 144
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 49,
+        "y": 24,
+        "w": 132,
+        "h": 144
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_speedup_start/22.png": {
+      "frame": {
+        "x": 1713,
+        "y": 0,
+        "w": 132,
+        "h": 144
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 49,
+        "y": 24,
+        "w": 132,
+        "h": 144
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_speedup_start/21.png": {
+      "frame": {
+        "x": 768,
+        "y": 0,
+        "w": 131,
+        "h": 144
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 49,
+        "y": 24,
+        "w": 131,
+        "h": 144
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_speedup_start/12.png": {
+      "frame": {
+        "x": 1002,
+        "y": 829,
+        "w": 104,
+        "h": 154
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 14,
+        "w": 104,
+        "h": 154
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_speedup_start/11.png": {
+      "frame": {
+        "x": 809,
+        "y": 829,
+        "w": 99,
+        "h": 156
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 12,
+        "w": 99,
+        "h": 156
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_speedup_start/10.png": {
+      "frame": {
+        "x": 753,
+        "y": 998,
+        "w": 94,
+        "h": 158
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 10,
+        "w": 94,
+        "h": 158
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_speedup_start/9.png": {
+      "frame": {
+        "x": 752,
+        "y": 1889,
+        "w": 94,
+        "h": 159
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 9,
+        "w": 94,
+        "h": 159
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_speedup_start/8.png": {
+      "frame": {
+        "x": 1025,
+        "y": 1845,
+        "w": 94,
+        "h": 161
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 7,
+        "w": 94,
+        "h": 161
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_speedup_start/7.png": {
+      "frame": {
+        "x": 846,
+        "y": 1690,
+        "w": 94,
+        "h": 162
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 6,
+        "w": 94,
+        "h": 162
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_speedup_start/6.png": {
+      "frame": {
+        "x": 931,
+        "y": 1852,
+        "w": 94,
+        "h": 162
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 6,
+        "w": 94,
+        "h": 162
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_speedup_start/5.png": {
+      "frame": {
+        "x": 577,
+        "y": 1365,
+        "w": 94,
+        "h": 163
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 5,
+        "w": 94,
+        "h": 163
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_speedup_start/4.png": {
+      "frame": {
+        "x": 578,
+        "y": 1528,
+        "w": 94,
+        "h": 163
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 5,
+        "w": 94,
+        "h": 163
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_speedup_start/3.png": {
+      "frame": {
+        "x": 390,
+        "y": 1236,
+        "w": 94,
+        "h": 164
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 4,
+        "w": 94,
+        "h": 164
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_speedup_start/20.png": {
+      "frame": {
+        "x": 1845,
+        "y": 0,
+        "w": 131,
+        "h": 145
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 49,
+        "y": 23,
+        "w": 131,
+        "h": 145
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_speedup_start/2.png": {
+      "frame": {
+        "x": 444,
+        "y": 711,
+        "w": 94,
+        "h": 164
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 4,
+        "w": 94,
+        "h": 164
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_speedup_start/1.png": {
+      "frame": {
+        "x": 444,
+        "y": 875,
+        "w": 94,
+        "h": 164
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 4,
+        "w": 94,
+        "h": 164
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_speedup_start/19.png": {
+      "frame": {
+        "x": 1713,
+        "y": 144,
+        "w": 130,
+        "h": 145
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 49,
+        "y": 23,
+        "w": 130,
+        "h": 145
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_speedup_start/18.png": {
+      "frame": {
+        "x": 1843,
+        "y": 145,
+        "w": 127,
+        "h": 146
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 50,
+        "y": 22,
+        "w": 127,
+        "h": 146
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_speedup_start/17.png": {
+      "frame": {
+        "x": 1713,
+        "y": 289,
+        "w": 124,
+        "h": 146
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 51,
+        "y": 22,
+        "w": 124,
+        "h": 146
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_speedup_start/16.png": {
+      "frame": {
+        "x": 1497,
+        "y": 1888,
+        "w": 122,
+        "h": 148
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 51,
+        "y": 20,
+        "w": 122,
+        "h": 148
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_speedup_start/15.png": {
+      "frame": {
+        "x": 1379,
+        "y": 1888,
+        "w": 118,
+        "h": 149
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 19,
+        "w": 118,
+        "h": 149
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_speedup_start/14.png": {
+      "frame": {
+        "x": 1223,
+        "y": 1438,
+        "w": 114,
+        "h": 150
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 18,
+        "w": 114,
+        "h": 150
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/jesus_speedup_start/13.png": {
+      "frame": {
+        "x": 1035,
+        "y": 983,
+        "w": 109,
+        "h": 152
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 16,
+        "w": 109,
+        "h": 152
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/nisse_idle/30.png": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 146,
+        "h": 364
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 3,
+        "y": 61,
+        "w": 146,
+        "h": 364
+      },
+      "sourceSize": {
+        "w": 180,
+        "h": 430
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/nisse_idle/31.png": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 146,
+        "h": 364
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 3,
+        "y": 61,
+        "w": 146,
+        "h": 364
+      },
+      "sourceSize": {
+        "w": 180,
+        "h": 430
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/nisse_idle/32.png": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 146,
+        "h": 364
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 3,
+        "y": 61,
+        "w": 146,
+        "h": 364
+      },
+      "sourceSize": {
+        "w": 180,
+        "h": 430
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/nisse_idle/33.png": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 146,
+        "h": 364
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 3,
+        "y": 61,
+        "w": 146,
+        "h": 364
+      },
+      "sourceSize": {
+        "w": 180,
+        "h": 430
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/nisse_idle/34.png": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 146,
+        "h": 364
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 3,
+        "y": 61,
+        "w": 146,
+        "h": 364
+      },
+      "sourceSize": {
+        "w": 180,
+        "h": 430
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/nisse_idle/35.png": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 146,
+        "h": 364
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 3,
+        "y": 61,
+        "w": 146,
+        "h": 364
+      },
+      "sourceSize": {
+        "w": 180,
+        "h": 430
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/nisse_idle/36.png": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 146,
+        "h": 364
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 3,
+        "y": 61,
+        "w": 146,
+        "h": 364
+      },
+      "sourceSize": {
+        "w": 180,
+        "h": 430
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/nisse_idle/37.png": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 146,
+        "h": 364
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 3,
+        "y": 61,
+        "w": 146,
+        "h": 364
+      },
+      "sourceSize": {
+        "w": 180,
+        "h": 430
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/nisse_idle/38.png": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 146,
+        "h": 364
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 3,
+        "y": 61,
+        "w": 146,
+        "h": 364
+      },
+      "sourceSize": {
+        "w": 180,
+        "h": 430
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/nisse_idle/39.png": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 146,
+        "h": 364
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 3,
+        "y": 61,
+        "w": 146,
+        "h": 364
+      },
+      "sourceSize": {
+        "w": 180,
+        "h": 430
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/nisse_idle/40.png": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 146,
+        "h": 364
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 3,
+        "y": 61,
+        "w": 146,
+        "h": 364
+      },
+      "sourceSize": {
+        "w": 180,
+        "h": 430
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/nisse_idle/41.png": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 146,
+        "h": 364
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 3,
+        "y": 61,
+        "w": 146,
+        "h": 364
+      },
+      "sourceSize": {
+        "w": 180,
+        "h": 430
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/nisse_idle/42.png": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 146,
+        "h": 364
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 3,
+        "y": 61,
+        "w": 146,
+        "h": 364
+      },
+      "sourceSize": {
+        "w": 180,
+        "h": 430
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/nisse_idle/43.png": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 146,
+        "h": 364
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 3,
+        "y": 61,
+        "w": 146,
+        "h": 364
+      },
+      "sourceSize": {
+        "w": 180,
+        "h": 430
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/nisse_idle/44.png": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 146,
+        "h": 364
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 3,
+        "y": 61,
+        "w": 146,
+        "h": 364
+      },
+      "sourceSize": {
+        "w": 180,
+        "h": 430
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/nisse_idle/45.png": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 146,
+        "h": 364
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 3,
+        "y": 61,
+        "w": 146,
+        "h": 364
+      },
+      "sourceSize": {
+        "w": 180,
+        "h": 430
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/nisse_idle/29.png": {
+      "frame": {
+        "x": 0,
+        "y": 364,
+        "w": 146,
+        "h": 363
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 3,
+        "y": 62,
+        "w": 146,
+        "h": 363
+      },
+      "sourceSize": {
+        "w": 180,
+        "h": 430
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/nisse_idle/20.png": {
+      "frame": {
+        "x": 439,
+        "y": 0,
+        "w": 149,
+        "h": 356
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 3,
+        "y": 69,
+        "w": 149,
+        "h": 356
+      },
+      "sourceSize": {
+        "w": 180,
+        "h": 430
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/nisse_idle/19.png": {
+      "frame": {
+        "x": 442,
+        "y": 356,
+        "w": 149,
+        "h": 355
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 3,
+        "y": 70,
+        "w": 149,
+        "h": 355
+      },
+      "sourceSize": {
+        "w": 180,
+        "h": 430
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/nisse_idle/18.png": {
+      "frame": {
+        "x": 588,
+        "y": 0,
+        "w": 149,
+        "h": 355
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 3,
+        "y": 70,
+        "w": 149,
+        "h": 355
+      },
+      "sourceSize": {
+        "w": 180,
+        "h": 430
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/nisse_idle/17.png": {
+      "frame": {
+        "x": 146,
+        "y": 1436,
+        "w": 149,
+        "h": 355
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 3,
+        "y": 70,
+        "w": 149,
+        "h": 355
+      },
+      "sourceSize": {
+        "w": 180,
+        "h": 430
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/nisse_idle/16.png": {
+      "frame": {
+        "x": 146,
+        "y": 1081,
+        "w": 150,
+        "h": 355
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 3,
+        "y": 70,
+        "w": 150,
+        "h": 355
+      },
+      "sourceSize": {
+        "w": 180,
+        "h": 430
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/nisse_idle/28.png": {
+      "frame": {
+        "x": 0,
+        "y": 727,
+        "w": 146,
+        "h": 363
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 3,
+        "y": 62,
+        "w": 146,
+        "h": 363
+      },
+      "sourceSize": {
+        "w": 180,
+        "h": 430
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/nisse_idle/9.png": {
+      "frame": {
+        "x": 293,
+        "y": 360,
+        "w": 149,
+        "h": 357
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 3,
+        "y": 68,
+        "w": 149,
+        "h": 357
+      },
+      "sourceSize": {
+        "w": 180,
+        "h": 430
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/nisse_idle/8.png": {
+      "frame": {
+        "x": 146,
+        "y": 723,
+        "w": 148,
+        "h": 358
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 3,
+        "y": 67,
+        "w": 148,
+        "h": 358
+      },
+      "sourceSize": {
+        "w": 180,
+        "h": 430
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/nisse_idle/7.png": {
+      "frame": {
+        "x": 292,
+        "y": 0,
+        "w": 147,
+        "h": 360
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 3,
+        "y": 65,
+        "w": 147,
+        "h": 360
+      },
+      "sourceSize": {
+        "w": 180,
+        "h": 430
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/nisse_idle/6.png": {
+      "frame": {
+        "x": 146,
+        "y": 362,
+        "w": 147,
+        "h": 361
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 3,
+        "y": 64,
+        "w": 147,
+        "h": 361
+      },
+      "sourceSize": {
+        "w": 180,
+        "h": 430
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/nisse_idle/5.png": {
+      "frame": {
+        "x": 146,
+        "y": 0,
+        "w": 146,
+        "h": 362
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 3,
+        "y": 63,
+        "w": 146,
+        "h": 362
+      },
+      "sourceSize": {
+        "w": 180,
+        "h": 430
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/nisse_idle/4.png": {
+      "frame": {
+        "x": 0,
+        "y": 1090,
+        "w": 146,
+        "h": 363
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 3,
+        "y": 62,
+        "w": 146,
+        "h": 363
+      },
+      "sourceSize": {
+        "w": 180,
+        "h": 430
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "atlases/nisse_idle/3.png": {
+      "frame": {
+        "x": 0,
+        "y": 1453,
+        "w": 146,
+        "h": 363
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 3,
+        "y": 62,
+        "w": 146,
+        "h": 363
+      },
+      "sourceSize": {
+        "w": 180,
+        "h": 430
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  "meta": {
+    "app": "https://github.com/odrick/webpack-free-tex-packer",
+    "version": "0.3.1",
+    "image": "pack-result.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 2025,
+      "h": 2048
+    },
+    "scale": 1
+  }
+}

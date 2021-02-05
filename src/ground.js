@@ -5,7 +5,6 @@ window.toffset = 0;
 
 export default {
     pillars: [],
-    shader: null,
 
     preload(phaser) {
         phaser.load.image(ground, ground);

@@ -17,4 +17,32 @@ module.exports = {
             repeat: config.repeat,
         });
     },
+
+    getPackedFrames(name, start, end) {
+        const frames = [];
+
+        for(let i = start; i <= end; i++) {
+            frames.push({ key: 'pack-result', frame: `atlases/${name}/${i}.png` })
+        }
+
+        return frames;
+    },
+
+    chain(sprite, ...animations) {
+        return new Promise(resolve => {
+            let onAnimationComplete = (anim) => {
+                var next = animations.shift();
+            
+                if (next) {
+                    sprite.play(next);
+                } else {
+                    sprite.off("animationcomplete", onAnimationComplete);
+                    resolve()
+                }
+            }
+
+            sprite.on(Phaser.Animations.Events.ANIMATION_COMPLETE, onAnimationComplete);
+            sprite.play(animations[0]);
+        })
+    }
 };
