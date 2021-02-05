@@ -35,8 +35,18 @@ export default class MainMenu extends Phaser.Scene {
             })
             .setOrigin(0.5, 0.5);
 
-        const restartButton = this.add
-            .text(400, 350, 'Börja Spela', {
+        this.addButton(400, 350, 'Börja Spela', '🎅', () => {
+            this.scene.launch('MainScene');
+        });
+    }
+
+    update(time, deltaTime) {
+        background.update(this, time / 1000, deltaTime / 1000);
+    }
+
+    addButton(x, y, label, emoji, onClick) {
+        const button = this.add
+            .text(x, y, label, {
                 align: 'center',
                 fill: 'white',
                 fontFamily: 'Balsamiq Sans, sans-serif',
@@ -46,28 +56,40 @@ export default class MainMenu extends Phaser.Scene {
             .setOrigin(0.5, 0.5)
             .setInteractive();
 
-        restartButton.on('pointerover', () => {
-            restartButton.setStyle({
+        const icon = this.add
+            .text(x - button.width / 2 - 25, y, emoji, {
+                align: 'center',
+                fontSize: 32,
+                padding: {
+                    left: 5,
+                    right: 5, 
+                    top: 5,
+                    bottom: 5,
+                },
+            })
+            .setOrigin(0.5, 0.5)
+            .setVisible(false);
+
+        button.on('pointerover', () => {
+            button.setStyle({
                 strokeThickness: 8,
             });
+            icon.setVisible(true);
         });
-        restartButton.on('pointerout', () => {
-            restartButton.setStyle({
+        button.on('pointerout', () => {
+            button.setStyle({
                 strokeThickness: 0,
             });
+            icon.setVisible(false);
         });
 
-        restartButton.on('pointerdown', () => {
-            restartButton.on('pointerup', () => {
-                this.scene.launch('MainScene');
+        button.on('pointerdown', () => {
+            button.on('pointerup', () => {
+                onClick();
             });
             setTimeout(() => {
-                restartButton.off('pointerup');
+                button.off('pointerup');
             }, 500);
         });
-    }
-
-    update(time, deltaTime) {
-        background.update(this, time / 1000, deltaTime / 1000);
     }
 }
