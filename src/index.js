@@ -6,7 +6,8 @@ import Hiscore from './Hiscore';
 import './css/fonts.scss';
 
 const game = new Phaser.Game(config);
-game.scene.add('MainScene', MainScene, true);
+game.scene.add('MainMenu', menu, true);
+game.scene.add('MainScene', MainScene, false);
 game.scene.add('menuPause', menuPause, false);
 
 (async () => {
