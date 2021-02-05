@@ -3,6 +3,7 @@ import Phaser from 'phaser';
 import Animations from './animations';
 import pointManager from './pointManager';
 import SnowParticle from '../assets/image/snow-particle.png';
+import Hiscore from './Hiscore';
 
 window.cameraX = 500;
 
@@ -11,6 +12,7 @@ export default {
     snowEmitter: null,
     doEmitSnow: false,
     player: null,
+    fadeRect: null,
     gravity: 15,
     friction: 0.7,
     feelGoodFormula: 40, // Magic number that defines the "feel" of the game
@@ -35,7 +37,6 @@ export default {
     create(phaser) {
         ground.create(phaser);
         this.createAnimations(phaser);
-       
 
         this.particles = phaser.add.particles('snow-particle');
         this.snowEmitter = this.particles.createEmitter({
@@ -79,6 +80,8 @@ export default {
         this.keyFlipRight = phaser.input.keyboard.addKey(
             Phaser.Input.Keyboard.KeyCodes.RIGHT
         );
+
+        this.fadeRect = phaser.add.rectangle(400, 300, 800, 600, 0x000000, 0);
     },
 
     createAnimations(phaser) {
@@ -289,9 +292,29 @@ export default {
             }
         }
 
+        if (this.velocity.x <= 10) {
+            this.fadeRect.alpha += deltaTime / 5;
+            if (this.fadeRect.alpha >= 1) {
+                this.gameOver();
+            }
+        } else this.fadeRect.alpha = 0;
+
         this.handleAnimationState();
 
         window.cameraX += deltaTime * this.velocity.x * 10;
         pointManager.addPoints(deltaTime * this.velocity.x * 3, true);
+    },
+
+    async gameOver() {
+        const hiscore = new Hiscore('https://localhost:1234');
+        const name = prompt(`
+            Game Over!
+            Du fick ${pointManager.points} poäng.
+
+            Vad vill du heta på topplistan?
+        `);
+
+        await hiscore.postScore(7, pointManager.points, name);
+        location.reload();
     },
 };

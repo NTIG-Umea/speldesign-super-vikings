@@ -12,19 +12,18 @@ export default class Hiscore {
 
     // Använd postscore när spelarens score ska postas
     // ni kommer att få gameids, troligast gruppnamn
-    postScore(gameID, score, name) {
-        this.instance
-            .post('/hiscore', {
+    async postScore(gameID, score, name) {
+        try {
+            const response = await this.instance.post('/hiscore', {
                 id: gameID,
                 score: score,
                 name: name.substring(0, 3),
-            })
-            .then(function (response) {
-                console.log(response.data.msg);
-            })
-            .catch(function (error) {
-                console.log(error);
             });
+
+            console.log(response.data.msg);
+        } catch (error) {
+            console.log(error);
+        }
     }
 
     // för att hämta alla hiscores så använder ni getscore
