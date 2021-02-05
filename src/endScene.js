@@ -9,5 +9,6 @@ export default class EndScene extends Phaser.Scene {
     preload() {}
 
     create() {
+        const hiscore = new Hiscore();
     }
 }
