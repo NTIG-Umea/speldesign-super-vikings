@@ -25,6 +25,8 @@ export default class MainMenu extends Phaser.Scene {
         // this.add.image(400, 300, background2);
         background.create(this);
 
+        this.add.rectangle(400, 300, 800, 600, 0x000000, 0.2);
+
         this.add
             .text(400, 200, 'Jesus Christ Pro\n' + 'Snowboarding 2021', {
                 align: 'center',
