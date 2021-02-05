@@ -1,7 +1,4 @@
 import Phaser from 'phaser';
-import background0 from '../assets/image/background-0.png';
-import background1 from '../assets/image/background-1.png';
-import background2 from '../assets/image/background-2.png';
 import background from './background';
 import player from './player';
 
