@@ -12,6 +12,7 @@
     "build:prod": "webpack --mode development --env production"
   },
   "dependencies": {
+    "axios": "^0.21.1",
     "bootstrap": "^4.5.3",
     "jquery": "^3.5.1",
     "phaser": "^3.24.1",
