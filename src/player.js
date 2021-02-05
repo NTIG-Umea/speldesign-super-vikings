@@ -306,7 +306,7 @@ export default {
     },
 
     async gameOver() {
-        const hiscore = new Hiscore('https://localhost:1234');
+        const hiscore = new Hiscore('https://localhost:3000');
         const name = prompt(`
             Game Over!
             Du fick ${pointManager.points} poäng.
@@ -314,7 +314,10 @@ export default {
             Vad vill du heta på topplistan?
         `);
 
-        await hiscore.postScore(7, pointManager.points, name);
+        if (name != null) {
+            await hiscore.postScore(7, pointManager.points, name);
+        }
+
         location.reload();
     },
 };

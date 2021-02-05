@@ -22,22 +22,18 @@ export default class Hiscore {
 
             console.log(response.data.msg);
         } catch (error) {
-            console.log(error);
+            console.error(error);
         }
     }
 
     // för att hämta alla hiscores så använder ni getscore
-    getScore(gameID) {
-        this.instance
-            .get('/hiscore/' + gameID)
-            .then(function (response) {
-                // handle success
-                console.log(response);
-                return response;
-            })
-            .catch(function (error) {
-                // handle error
-                console.log(error);
-            });
+    async getScore(gameID) {
+        try {
+            const response = await this.instance.get('/hiscore/' + gameID);
+            console.log(response);
+            return response;
+        } catch (error) {
+            console.error(error);
+        }
     }
 }
