@@ -20,6 +20,7 @@ export default class MainScene extends Phaser.Scene {
 
         this.scene.systems.cameras.main.setBackgroundColor('#777777');
         player.preload(this);
+        background.preload(this);
         animations.load(this, logoAnimation);
     }
 
