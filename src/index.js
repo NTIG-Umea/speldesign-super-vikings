@@ -4,7 +4,6 @@ import menuPause from './menuPause';
 import MainScene from './mainScene';
 
 const game = new Phaser.Game(config);
-game.scene.add('MainScene', MainScene, true)
-import './css/fonts.scss';
-
+game.scene.add('MainMenu', menu, true);
+game.scene.add('MainScene', MainScene, false);
 game.scene.add('menuPause', menuPause, false);

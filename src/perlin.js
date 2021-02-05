@@ -1,5 +1,3 @@
-import Victor from 'victor';
-
 const M_PI = Math.PI;
 const seed = Date.now()
 

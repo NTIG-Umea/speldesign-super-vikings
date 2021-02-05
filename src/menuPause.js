@@ -18,8 +18,6 @@ export default class menuPause extends Phaser.Scene {
         this.scene.moveUp();
         this.scene.setVisible(false);
 
-        this.add.image(400, 300, '../assets/image/background-1.png');
-
         console.log(this.scene.isSleeping('MainScene'));
 
         this.add
@@ -31,66 +29,12 @@ export default class menuPause extends Phaser.Scene {
             })
             .setOrigin(0.5, 0.5);
 
-        const resumeButton = this.add
-            .text(400, 300, 'Återuppta', {
-                align: 'center',
-                fill: 'white',
-                fontFamily: 'Balsamiq Sans, sans-serif',
-                fontSize: 32,
-                stroke: '#000000',
-            })
-            .setOrigin(0.5, 0.5)
-            .setInteractive();
-
-        resumeButton.on('pointerover', () => {
-            resumeButton.setStyle({
-                strokeThickness: 8,
-            });
-        });
-        resumeButton.on('pointerout', () => {
-            resumeButton.setStyle({
-                strokeThickness: 0,
-            });
+        this.addButton(400, 300, 'Återuppta', '🎅', () => {
+            this.resume();
         });
 
-        resumeButton.on('pointerdown', () => {
-            resumeButton.on('pointerup', () => {
-                this.resume();
-            });
-            setTimeout(() => {
-                resumeButton.off('pointerup');
-            }, 500);
-        });
-
-        const quitButton = this.add
-            .text(400, 350, 'Tillbaka till Huvudmenyn', {
-                align: 'center',
-                fill: 'white',
-                fontFamily: 'Balsamiq Sans, sans-serif',
-                fontSize: 32,
-                stroke: '#000000',
-            })
-            .setOrigin(0.5, 0.5)
-            .setInteractive();
-
-        quitButton.on('pointerover', () => {
-            quitButton.setStyle({
-                strokeThickness: 8,
-            });
-        });
-        quitButton.on('pointerout', () => {
-            quitButton.setStyle({
-                strokeThickness: 0,
-            });
-        });
-
-        quitButton.on('pointerdown', () => {
-            quitButton.on('pointerup', () => {
-                location.reload();
-            });
-            setTimeout(() => {
-                quitButton.off('pointerup');
-            }, 500);
+        this.addButton(400, 350, 'Tillbaka till Huvudmenyn', '🎅', () => {
+            location.reload();
         });
 
         const esc = this.input.keyboard.addKey(
@@ -103,6 +47,55 @@ export default class menuPause extends Phaser.Scene {
             } else {
                 this.pause();
             }
+        });
+    }
+
+    addButton(x, y, label, emoji, onClick) {
+        const button = this.add
+            .text(x, y, label, {
+                align: 'center',
+                fill: 'white',
+                fontFamily: 'Balsamiq Sans, sans-serif',
+                fontSize: 32,
+                stroke: '#000000',
+            })
+            .setOrigin(0.5, 0.5)
+            .setInteractive();
+
+        const icon = this.add
+            .text(x - button.width / 2 - 25, y, emoji, {
+                align: 'center',
+                fontSize: 32,
+                padding: {
+                    left: 5,
+                    right: 5, 
+                    top: 5,
+                    bottom: 5,
+                },
+            })
+            .setOrigin(0.5, 0.5)
+            .setVisible(false);
+
+        button.on('pointerover', () => {
+            button.setStyle({
+                strokeThickness: 8,
+            });
+            icon.setVisible(true);
+        });
+        button.on('pointerout', () => {
+            button.setStyle({
+                strokeThickness: 0,
+            });
+            icon.setVisible(false);
+        });
+
+        button.on('pointerdown', () => {
+            button.on('pointerup', () => {
+                onClick();
+            });
+            setTimeout(() => {
+                button.off('pointerup');
+            }, 500);
         });
     }
 

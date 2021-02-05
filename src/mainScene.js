@@ -1,9 +1,10 @@
+import Phaser from 'phaser';
 import * as animations from './animations';
 import player from './player';
 import background from './background';
 import pointManager from './pointManager';
 
-class MainScene extends Phaser.Scene {
+export default class MainScene extends Phaser.Scene {
     constructor() {
         super('MainScene');
     }
@@ -19,7 +20,6 @@ class MainScene extends Phaser.Scene {
         
         this.load.atlas('pack-result', 'pack-result.png', 'pack-result.json');
         this.scene.systems.cameras.main.setBackgroundColor('#777777');
-
         background.preload(this);
         pointManager.preload(this);
         player.preload(this);
@@ -42,5 +42,3 @@ class MainScene extends Phaser.Scene {
         player.update(this, time / 1000, deltaTime / 1000);
     }
 }
-
-export default MainScene
